@@ -1,0 +1,96 @@
+name: Track Commute
+
+on:
+  schedule:
+    - cron: '0 0 * * *'      # 7:00 ICT (UTC+7)
+    - cron: '30 0 * * *'     # 7:30 ICT
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: 'Slot to run (0700 or 0730)'
+        required: true
+        default: '0700'
+        type: choice
+        options:
+          - '0700'
+          - '0730'
+
+permissions:
+  contents: write
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Determine slot
+        id: slot
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          SCHEDULE: ${{ github.event.schedule }}
+          INPUT_SLOT: ${{ github.event.inputs.slot }}
+        run: |
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            case "$INPUT_SLOT" in
+              0700|0730) echo "slot=$INPUT_SLOT" >> "$GITHUB_OUTPUT" ;;
+              *) echo "Invalid slot: $INPUT_SLOT" >&2; exit 1 ;;
+            esac
+          elif [ "$SCHEDULE" = "0 0 * * *" ]; then
+            echo "slot=0700" >> "$GITHUB_OUTPUT"
+          else
+            echo "slot=0730" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Track commute
+        env:
+          GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
+          SLOT: ${{ steps.slot.outputs.slot }}
+        run: python scripts/track_commute.py --slot "$SLOT"
+
+      - name: Generate report
+        run: python scripts/report.py
+
+      - name: Commit log + report
+        env:
+          SLOT: ${{ steps.slot.outputs.slot }}
+        run: |
+          git config user.name "commute-bot"
+          git config user.email "commute-bot@users.noreply.github.com"
+          git add data/commute_log.csv reports/latest.html
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "data: append slot $SLOT log"
+            git push
+          fi
+
+  deploy-pages:
+    needs: track
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: reports
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
