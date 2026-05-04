@@ -1,0 +1,9 @@
+timestamp_ict,apartment_id,slot,duration_min,duration_in_traffic_min,duration_motorcycle_min,distance_km,status
+2026-05-05T07:00:00+07:00,test-cluster-a,0700,15,18,15.84,7.5,OK
+2026-05-06T07:00:00+07:00,test-cluster-a,0700,16,20,17.6,7.5,OK
+2026-05-07T07:00:00+07:00,test-cluster-a,0700,15,19,16.72,7.5,OK
+2026-05-05T07:30:00+07:00,test-cluster-a,0730,17,22,19.36,7.5,OK
+2026-05-06T07:30:00+07:00,test-cluster-a,0730,18,24,21.12,7.5,OK
+2026-05-05T07:00:00+07:00,test-cluster-b,0700,25,32,28.16,12.0,OK
+2026-05-06T07:00:00+07:00,test-cluster-b,0700,26,34,29.92,12.0,OK
+2026-05-07T07:00:00+07:00,test-cluster-b,0700,,,,,ERROR_OVER_QUERY_LIMIT
