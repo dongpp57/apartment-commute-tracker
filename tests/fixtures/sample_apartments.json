@@ -1,0 +1,14 @@
+[
+  {
+    "id": "test-cluster-a",
+    "cluster_name": "Test Cluster A",
+    "lat": 21.0145,
+    "lng": 105.7423
+  },
+  {
+    "id": "test-cluster-b",
+    "cluster_name": "Test Cluster B",
+    "lat": 21.0500,
+    "lng": 105.8500
+  }
+]
