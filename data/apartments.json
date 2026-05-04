@@ -1,0 +1,298 @@
+[
+  {
+    "id": "vinhomes-smart-city",
+    "cluster_name": "Vinhomes Smart City",
+    "district": "Nam Từ Liêm",
+    "representative_address": "Đại lộ Thăng Long, Tây Mỗ, Nam Từ Liêm, Hà Nội",
+    "lat": 21.0145,
+    "lng": 105.7423,
+    "category": "cao_cap",
+    "sample_units": [
+      {
+        "tower": "Sapphire 1",
+        "area_m2": 55,
+        "bedrooms": 2,
+        "price_billion_vnd": 4.8,
+        "status": "đã bàn giao",
+        "source_url": "https://batdongsan.com.vn/ban-can-ho-chung-cu-vinhomes-smart-city"
+      }
+    ],
+    "pros": ["Tiện ích đẳng cấp Vinhomes (Mega Mall, Vinschool, Vinmec)", "Cộng đồng trẻ, đông dân", "Hạ tầng phía Tây phát triển mạnh, gần đại lộ Thăng Long + Vành đai 3"],
+    "cons": ["Xa trung tâm (12-13 km)", "Mật độ dân số rất cao", "Tắc đường giờ cao điểm trục Đại lộ Thăng Long"],
+    "estimated_commute_min": 28,
+    "investment_potential": "Cao - thương hiệu Vinhomes, Metro số 5 tương lai, sức cầu thuê + bán ổn định",
+    "data_collected_date": "2026-05-04"
+  },
+  {
+    "id": "hd-mon-city",
+    "cluster_name": "HD Mon City (Hải Đăng City)",
+    "district": "Nam Từ Liêm",
+    "representative_address": "Hàm Nghi, Mỹ Đình 2, Nam Từ Liêm, Hà Nội",
+    "lat": 21.0335,
+    "lng": 105.7720,
+    "category": "cao_cap",
+    "sample_units": [
+      {
+        "tower": "Tòa B",
+        "area_m2": 67,
+        "bedrooms": 2,
+        "price_billion_vnd": 5.0,
+        "status": "đã bàn giao",
+        "source_url": "https://homedy.com/ban-can-ho-khu-chung-cu-hd-mon-city"
+      },
+      {
+        "tower": "Tòa C",
+        "area_m2": 61.5,
+        "bedrooms": 2,
+        "price_billion_vnd": 4.8,
+        "status": "đã bàn giao",
+        "source_url": "https://batdongsan.com.vn/du-an-khu-phuc-hop-nam-tu-liem/mon-city-pj2198"
+      }
+    ],
+    "pros": ["Vị trí trung tâm Mỹ Đình, gần BigC, Keangnam", "Bàn giao ổn định, cộng đồng dân cư đã định hình", "Tiện ích nội khu đầy đủ"],
+    "cons": ["Trục Hàm Nghi - Lê Đức Thọ tắc giờ cao điểm", "Mật độ tòa khá dày"],
+    "estimated_commute_min": 22,
+    "investment_potential": "Trung bình - khu vực Mỹ Đình 2 đã định giá, ít sóng nhưng thanh khoản tốt",
+    "data_collected_date": "2026-05-04"
+  },
+  {
+    "id": "my-dinh-pearl",
+    "cluster_name": "Mỹ Đình Pearl",
+    "district": "Nam Từ Liêm",
+    "representative_address": "Châu Văn Liêm, Phú Đô, Nam Từ Liêm, Hà Nội",
+    "lat": 21.0215,
+    "lng": 105.7625,
+    "category": "trung_cap",
+    "sample_units": [
+      {
+        "tower": "P1",
+        "area_m2": 73,
+        "bedrooms": 2,
+        "price_billion_vnd": 3.4,
+        "status": "đã bàn giao",
+        "source_url": "https://batdongsan.com.vn/ban-can-ho-chung-cu-my-dinh-pearl/gia-tu-3-ty-den-5-ty"
+      },
+      {
+        "tower": "P2",
+        "area_m2": 79,
+        "bedrooms": 2,
+        "price_billion_vnd": 4.0,
+        "status": "đã bàn giao",
+        "source_url": "https://homedy.com/ban-can-ho-my-dinh-pearl"
+      }
+    ],
+    "pros": ["Giá rất tốt cho khu vực Mỹ Đình (dưới 4 tỉ là hiếm)", "Diện tích 73-79m² rộng rãi cho 2PN", "View hồ điều hòa Phú Đô + sân golf"],
+    "cons": ["Đường Châu Văn Liêm chưa kết nối tốt", "Đi vào trục Lê Đức Thọ giờ cao điểm tắc"],
+    "estimated_commute_min": 24,
+    "investment_potential": "Trung bình - giá đang dưới mặt bằng khu vực, tiềm năng tăng giá khi hạ tầng quanh sân vận động Mỹ Đình hoàn thiện",
+    "data_collected_date": "2026-05-04"
+  },
+  {
+    "id": "vinhomes-ocean-park",
+    "cluster_name": "Vinhomes Ocean Park 1",
+    "district": "Gia Lâm",
+    "representative_address": "Đa Tốn, Gia Lâm, Hà Nội",
+    "lat": 20.9931,
+    "lng": 105.9410,
+    "category": "cao_cap",
+    "sample_units": [
+      {
+        "tower": "The Pavilion",
+        "area_m2": 63,
+        "bedrooms": 2,
+        "price_billion_vnd": 5.05,
+        "status": "đã bàn giao",
+        "source_url": "https://batdongsan.com.vn/ban-can-ho-chung-cu-vinhomes-ocean-park-gia-lam"
+      },
+      {
+        "tower": "The London",
+        "area_m2": 75.2,
+        "bedrooms": 2,
+        "price_billion_vnd": 4.9,
+        "status": "đã bàn giao",
+        "source_url": "https://vinhomeoceanpark.vn/"
+      }
+    ],
+    "pros": ["Hệ sinh thái Vinhomes hoàn chỉnh (Vinmec, Vinschool, Vincom Mega Mall)", "Hồ nước mặn nhân tạo + biển hồ độc đáo", "Diện tích 63-75m² tốt cho 2PN, tiện ích thể thao đa dạng"],
+    "cons": ["Xa trung tâm nhất trong list (~17 km)", "Phụ thuộc cầu Vĩnh Tuy/Thanh Trì - tắc nặng giờ cao điểm", "Chưa có Metro nối thẳng"],
+    "estimated_commute_min": 32,
+    "investment_potential": "Cao - 'thành phố thu nhỏ' Vingroup, hạ tầng Đông Hà Nội đang tăng tốc, vành đai 3,5 và cầu Trần Hưng Đạo",
+    "data_collected_date": "2026-05-04"
+  },
+  {
+    "id": "mipec-riverside",
+    "cluster_name": "Mipec Riverside Long Biên",
+    "district": "Long Biên",
+    "representative_address": "2 Long Biên II, Ngọc Lâm, Long Biên, Hà Nội",
+    "lat": 21.0445,
+    "lng": 105.8610,
+    "category": "cao_cap",
+    "sample_units": [
+      {
+        "tower": "C",
+        "area_m2": 69,
+        "bedrooms": 2,
+        "price_billion_vnd": 4.5,
+        "status": "đã bàn giao",
+        "source_url": "https://homedy.com/ban-can-ho-mipec-riverside"
+      }
+    ],
+    "pros": ["Sát cầu Long Biên - vào trung tâm rất nhanh", "View sông Hồng đẹp, gió mát", "Khu vực dân trí cao, an ninh tốt"],
+    "cons": ["Cầu Long Biên + cầu Chương Dương tắc giờ cao điểm", "Quỹ căn 2PN 69m² dưới 5 tỉ ngày càng hiếm"],
+    "estimated_commute_min": 22,
+    "investment_potential": "Cao - vị trí cận trung tâm, view sông là lợi thế khan hiếm",
+    "data_collected_date": "2026-05-04"
+  },
+  {
+    "id": "sunshine-riverside",
+    "cluster_name": "Sunshine Riverside (Phú Thượng)",
+    "district": "Tây Hồ",
+    "representative_address": "Phú Thượng, chân cầu Nhật Tân, Tây Hồ, Hà Nội",
+    "lat": 21.0810,
+    "lng": 105.8155,
+    "category": "cao_cap",
+    "sample_units": [
+      {
+        "tower": "R3",
+        "area_m2": 64,
+        "bedrooms": 2,
+        "price_billion_vnd": 5.0,
+        "status": "đã bàn giao",
+        "source_url": "https://batdongsan.com.vn/ban-can-ho-chung-cu-sunshine-riverside/2pn"
+      }
+    ],
+    "pros": ["View sông Hồng + cầu Nhật Tân nổi bật", "Khu Tây Hồ - cộng đồng cao cấp, gần Lotte Mall, Ciputra", "Đi sân bay Nội Bài rất nhanh"],
+    "cons": ["Quỹ căn 2PN dưới 5 tỉ rất hạn chế (chủ yếu căn nhỏ R3 64m²)", "Đường Lạc Long Quân đông buổi sáng"],
+    "estimated_commute_min": 25,
+    "investment_potential": "Cao - đất Tây Hồ luôn neo giá cao, view sông là tài sản dài hạn",
+    "data_collected_date": "2026-05-04"
+  },
+  {
+    "id": "ho-guom-plaza",
+    "cluster_name": "Hồ Gươm Plaza",
+    "district": "Hà Đông",
+    "representative_address": "110 Trần Phú, Mộ Lao, Hà Đông, Hà Nội",
+    "lat": 20.9810,
+    "lng": 105.7895,
+    "category": "trung_cap",
+    "sample_units": [
+      {
+        "tower": "A",
+        "area_m2": 65,
+        "bedrooms": 2,
+        "price_billion_vnd": 4.3,
+        "status": "đã bàn giao",
+        "source_url": "https://batdongsan.com.vn/ban-can-ho-chung-cu-ho-guom-plaza"
+      },
+      {
+        "tower": "B",
+        "area_m2": 76,
+        "bedrooms": 2,
+        "price_billion_vnd": 5.0,
+        "status": "đã bàn giao",
+        "source_url": "https://homedy.com/ban-can-ho-ho-guom-plaza"
+      }
+    ],
+    "pros": ["Vị trí cận trung tâm Hà Đông, gần BigC, Aeon", "Giá tốt cho căn 76m² 2PN dưới 5 tỉ", "Đã bàn giao lâu, cộng đồng ổn định"],
+    "cons": ["Trục Trần Phú - Nguyễn Trãi cực kỳ tắc giờ cao điểm", "Phụ thuộc Metro Cát Linh - Hà Đông"],
+    "estimated_commute_min": 26,
+    "investment_potential": "Trung bình - giá đã định, tiềm năng tăng phụ thuộc Metro số 2A và quy hoạch Hà Đông",
+    "data_collected_date": "2026-05-04"
+  },
+  {
+    "id": "eco-green-city",
+    "cluster_name": "Eco Green City",
+    "district": "Thanh Trì",
+    "representative_address": "286 Nguyễn Xiển, Tân Triều, Thanh Trì, Hà Nội",
+    "lat": 20.9755,
+    "lng": 105.8108,
+    "category": "trung_cap",
+    "sample_units": [
+      {
+        "tower": "CT2",
+        "area_m2": 67,
+        "bedrooms": 2,
+        "price_billion_vnd": 4.9,
+        "status": "đã bàn giao",
+        "source_url": "https://batdongsan.com.vn/ban-can-ho-chung-cu-eco-green-city"
+      },
+      {
+        "tower": "CT3",
+        "area_m2": 67,
+        "bedrooms": 2,
+        "price_billion_vnd": 5.0,
+        "status": "đã bàn giao",
+        "source_url": "https://homedy.com/ban-nha-dat-chung-cu-eco-green-city"
+      }
+    ],
+    "pros": ["Sát Vành đai 3 - đi nhiều hướng nhanh", "Giá tốt 4.9-5.0 tỉ căn 67m² full nội thất", "Cận sông Tô Lịch, mật độ cây xanh khá"],
+    "cons": ["Ngã tư Khuất Duy Tiến - Nguyễn Xiển kẹt cứng", "Khu vực ô nhiễm tiếng ồn Vành đai 3"],
+    "estimated_commute_min": 23,
+    "investment_potential": "Trung bình - giá vào hợp lý, sức cầu thuê tốt từ dân Linh Đàm/Đại Kim",
+    "data_collected_date": "2026-05-04"
+  },
+  {
+    "id": "hateco-apollo",
+    "cluster_name": "Hateco Apollo Xuân Phương",
+    "district": "Nam Từ Liêm",
+    "representative_address": "Đường 70, Phương Canh, Nam Từ Liêm, Hà Nội",
+    "lat": 21.0395,
+    "lng": 105.7280,
+    "category": "trung_cap",
+    "sample_units": [
+      {
+        "tower": "CT1",
+        "area_m2": 69,
+        "bedrooms": 2,
+        "price_billion_vnd": 4.5,
+        "status": "đã bàn giao",
+        "source_url": "https://batdongsan.com.vn/ban-can-ho-chung-cu-hateco-apollo"
+      },
+      {
+        "tower": "CT2",
+        "area_m2": 60,
+        "bedrooms": 2,
+        "price_billion_vnd": 3.9,
+        "status": "đã bàn giao",
+        "source_url": "https://homedy.com/ban-can-ho-hateco-apollo-xuan-phuong"
+      }
+    ],
+    "pros": ["Hồ điều hòa 7000m² nội khu - hiếm có", "Mật độ xây dựng thấp 35-39%", "Giá rất tốt cho cao_cap-trung_cap"],
+    "cons": ["Vị trí xa nhất phía Tây so với các cụm Mỹ Đình", "Đường 70 chật, đi Phạm Hùng/Trần Hữu Dực giờ cao điểm chậm"],
+    "estimated_commute_min": 28,
+    "investment_potential": "Trung bình-cao - giá còn dư địa tăng, hạ tầng phía Tây tiếp tục phát triển",
+    "data_collected_date": "2026-05-04"
+  },
+  {
+    "id": "iris-garden",
+    "cluster_name": "Iris Garden Mỹ Đình",
+    "district": "Nam Từ Liêm",
+    "representative_address": "30 Trần Hữu Dực, Cầu Diễn, Nam Từ Liêm, Hà Nội",
+    "lat": 21.0420,
+    "lng": 105.7530,
+    "category": "trung_cap",
+    "sample_units": [
+      {
+        "tower": "T1",
+        "area_m2": 62,
+        "bedrooms": 2,
+        "price_billion_vnd": 4.0,
+        "status": "đã bàn giao",
+        "source_url": "https://batdongsan.com.vn/ban-can-ho-chung-cu-iris-garden"
+      },
+      {
+        "tower": "T2",
+        "area_m2": 62,
+        "bedrooms": 2,
+        "price_billion_vnd": 4.7,
+        "status": "đã bàn giao",
+        "source_url": "https://homedy.com/ban-can-ho-iris-garden"
+      }
+    ],
+    "pros": ["Trục Trần Hữu Dực kết nối Phạm Văn Đồng + Lê Đức Thọ", "Tiện ích nội khu đầy đủ (bể bơi 4 mùa, gym)", "Giá tốt 4-4.7 tỉ"],
+    "cons": ["Nội khu hơi nhỏ", "Đường Trần Hữu Dực giờ cao điểm tắc"],
+    "estimated_commute_min": 23,
+    "investment_potential": "Trung bình - khu vực ổn định, sức cầu thuê tốt từ dân làm Mỹ Đình",
+    "data_collected_date": "2026-05-04"
+  }
+]
