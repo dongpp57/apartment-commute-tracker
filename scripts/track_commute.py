@@ -1,4 +1,4 @@
-"""Loop apartments, call Maps API, append to log."""
+"""Loop apartments, call routing API, append to log."""
 
 import argparse
 import json
@@ -8,18 +8,15 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 # Support both `python scripts/track_commute.py` (CLI) and `import scripts.track_commute` (pytest).
-# When run as a script, `scripts` is not a package on sys.path, so we insert the project root
-# and use relative-style lib imports. When imported as a module, absolute `scripts.lib` imports work.
 try:
-    from scripts.lib.maps_client import fetch_commute, MapsAPIError
+    from scripts.lib.routing_client import fetch_commute, RoutingAPIError
     from scripts.lib.log_writer import append_row
     from scripts.lib import config
 except ModuleNotFoundError:
-    # Running as `python scripts/track_commute.py` — project root not yet on path
     _project_root = str(Path(__file__).parent.parent)
     if _project_root not in sys.path:
         sys.path.insert(0, _project_root)
-    from scripts.lib.maps_client import fetch_commute, MapsAPIError
+    from scripts.lib.routing_client import fetch_commute, RoutingAPIError
     from scripts.lib.log_writer import append_row
     from scripts.lib import config
 
@@ -47,16 +44,19 @@ def run_tracking(*, apartments_path, log_path, slot, api_key):
                 dest_lng=config.DESTINATION_LNG,
                 api_key=api_key,
             )
+            duration_min = result["duration_min"]
+            # ORS has no real-time traffic. Apply Hanoi peak-hour heuristic for
+            # in-traffic estimate, then motorbike correction on top.
+            duration_in_traffic = duration_min * config.PEAK_HOUR_TRAFFIC_FACTOR
+            duration_motorcycle = duration_in_traffic * config.MOTO_FACTOR
             row.update({
-                "duration_min": round(result["duration_min"], 2),
-                "duration_in_traffic_min": round(result["duration_in_traffic_min"], 2),
-                "duration_motorcycle_min": round(
-                    result["duration_in_traffic_min"] * config.MOTO_FACTOR, 2
-                ),
+                "duration_min": round(duration_min, 2),
+                "duration_in_traffic_min": round(duration_in_traffic, 2),
+                "duration_motorcycle_min": round(duration_motorcycle, 2),
                 "distance_km": round(result["distance_km"], 2),
                 "status": "OK",
             })
-        except MapsAPIError as e:
+        except RoutingAPIError as e:
             row["status"] = f"ERROR_{type(e).__name__}_{str(e)[:60]}"
 
         append_row(log_path, row)
@@ -69,9 +69,9 @@ def main():
     parser.add_argument("--log", default="data/commute_log.csv")
     args = parser.parse_args()
 
-    api_key = os.environ.get("GOOGLE_MAPS_API_KEY")
+    api_key = os.environ.get("ORS_API_KEY")
     if not api_key:
-        print("ERROR: GOOGLE_MAPS_API_KEY env var not set", file=sys.stderr)
+        print("ERROR: ORS_API_KEY env var not set", file=sys.stderr)
         sys.exit(1)
 
     run_tracking(
