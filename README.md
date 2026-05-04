@@ -4,7 +4,7 @@ Tracks motorbike commute time from 10 candidate apartment clusters in Hanoi to V
 
 ## Setup
 
-See `docs/SETUP.md` (will be created in final task).
+See [docs/SETUP.md](docs/SETUP.md) for step-by-step instructions (Google Cloud, GitHub Secrets, Pages).
 
 ## Run locally
 
