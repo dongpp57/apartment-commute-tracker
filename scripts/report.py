@@ -4,9 +4,11 @@ import argparse
 import json
 import sys
 from collections import defaultdict
+from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
+from jinja2 import Template
 
 # Same dual-mode import as track_commute.py
 try:
@@ -77,11 +79,31 @@ def print_cli_report(data):
         print()
 
 
+def render_html(*, log_path, apartments_path, template_path, output_path):
+    data = compute_report_data(log_path=log_path, apartments_path=apartments_path)
+    template = Template(Path(template_path).read_text(encoding="utf-8"))
+
+    rankings = {slot: data[f"ranking_{slot}"] for slot in config.SLOTS}
+
+    html = template.render(
+        destination_name=config.DESTINATION_NAME,
+        moto_factor=config.MOTO_FACTOR,
+        slots=config.SLOTS,
+        apartments=data["apartments"],
+        per_apartment_slot=data["per_apartment_slot"],
+        rankings=rankings,
+        updated_at=datetime.now().isoformat(timespec="minutes"),
+    )
+    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+    Path(output_path).write_text(html, encoding="utf-8")
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--log", default="data/commute_log.csv")
     parser.add_argument("--apartments", default="data/apartments.json")
     parser.add_argument("--html-out", default="reports/latest.html")
+    parser.add_argument("--template", default="templates/report.html.j2")
     parser.add_argument("--cli-only", action="store_true")
     args = parser.parse_args()
 
@@ -92,8 +114,13 @@ def main():
     print_cli_report(data)
 
     if not args.cli_only:
-        # HTML rendering wired in Task 9
-        pass
+        render_html(
+            log_path=Path(args.log),
+            apartments_path=Path(args.apartments),
+            template_path=Path(args.template),
+            output_path=Path(args.html_out),
+        )
+        print(f"\nHTML report: {args.html_out}")
 
 
 if __name__ == "__main__":
