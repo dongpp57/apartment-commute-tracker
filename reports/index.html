@@ -19,7 +19,7 @@
 </head>
 <body>
 <h1>Commute Tracker — Vincom Nguyễn Chí Thanh</h1>
-<p class="meta">Updated: 2026-05-05T11:46 · Mode: motorcycle (driving × 0.88)</p>
+<p class="meta">Updated: 2026-05-05T12:05 · Mode: motorcycle (driving × 0.88)</p>
 
 
 <h2>Slot 07:00</h2>
@@ -438,6 +438,176 @@ new Chart(document.getElementById('chart-1730'), {
     <th>Mean</th><th>p50</th><th>p90</th><th>Std</th><th>Samples</th><th>Flags</th>
   </tr>
   
+    
+    
+  <tr>
+    <td>1</td>
+    <td>HD Mon City (Hải Đăng City)</td>
+    <td>Nam Từ Liêm</td>
+    <td class="num">13.8</td>
+    <td class="num">13.8</td>
+    <td class="num">13.8</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>2</td>
+    <td>Sunshine Riverside (Phú Thượng)</td>
+    <td>Tây Hồ</td>
+    <td class="num">16.1</td>
+    <td class="num">16.1</td>
+    <td class="num">16.1</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>3</td>
+    <td>Iris Garden Mỹ Đình</td>
+    <td>Nam Từ Liêm</td>
+    <td class="num">17.2</td>
+    <td class="num">17.2</td>
+    <td class="num">17.2</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>4</td>
+    <td>Mỹ Đình Pearl</td>
+    <td>Nam Từ Liêm</td>
+    <td class="num">18.6</td>
+    <td class="num">18.6</td>
+    <td class="num">18.6</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>5</td>
+    <td>Hateco Apollo Xuân Phương</td>
+    <td>Nam Từ Liêm</td>
+    <td class="num">24.0</td>
+    <td class="num">24.0</td>
+    <td class="num">24.0</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>6</td>
+    <td>Hồ Gươm Plaza</td>
+    <td>Hà Đông</td>
+    <td class="num">24.1</td>
+    <td class="num">24.1</td>
+    <td class="num">24.1</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>7</td>
+    <td>Eco Green City</td>
+    <td>Thanh Trì</td>
+    <td class="num">24.7</td>
+    <td class="num">24.7</td>
+    <td class="num">24.7</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>8</td>
+    <td>Vinhomes Smart City</td>
+    <td>Nam Từ Liêm</td>
+    <td class="num">24.8</td>
+    <td class="num">24.8</td>
+    <td class="num">24.8</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>9</td>
+    <td>Mipec Riverside Long Biên</td>
+    <td>Long Biên</td>
+    <td class="num">30.9</td>
+    <td class="num">30.9</td>
+    <td class="num">30.9</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      <span class="flag-warn">&#9888;&#65039; p90&gt;30</span>
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>10</td>
+    <td>Vinhomes Ocean Park 1</td>
+    <td>Gia Lâm</td>
+    <td class="num">47.5</td>
+    <td class="num">47.5</td>
+    <td class="num">47.5</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      <span class="flag-warn">&#9888;&#65039; p90&gt;30</span>
+      
+    </td>
+  </tr>
+  
 </table>
 
 <canvas id="chart-1800" height="120"></canvas>
@@ -445,10 +615,10 @@ new Chart(document.getElementById('chart-1730'), {
 new Chart(document.getElementById('chart-1800'), {
   type: 'bar',
   data: {
-    labels: [],
+    labels: ["hd-mon-city", "sunshine-riverside", "iris-garden", "my-dinh-pearl", "hateco-apollo", "ho-guom-plaza", "eco-green-city", "vinhomes-smart-city", "mipec-riverside", "vinhomes-ocean-park"],
     datasets: [{
       label: 'Mean motorbike commute (min) — slot 1800',
-      data: [],
+      data: [13.82, 16.15, 17.24, 18.6, 23.97, 24.11, 24.66, 24.77, 30.88, 47.49],
     }]
   }
 });
