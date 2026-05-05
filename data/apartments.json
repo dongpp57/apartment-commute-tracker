@@ -153,7 +153,9 @@
     ],
     "estimated_commute_min": 32,
     "investment_potential": "Cao - 'thành phố thu nhỏ' Vingroup, hạ tầng Đông Hà Nội đang tăng tốc, vành đai 3,5 và cầu Trần Hưng Đạo",
-    "data_collected_date": "2026-05-04"
+    "data_collected_date": "2026-05-04",
+    "calibration_factor": 0.961,
+    "calibration_source": "google_maps_motorbike_2026-05-05"
   },
   {
     "id": "mipec-riverside",
@@ -184,7 +186,9 @@
     ],
     "estimated_commute_min": 22,
     "investment_potential": "Cao - vị trí cận trung tâm, view sông là lợi thế khan hiếm",
-    "data_collected_date": "2026-05-04"
+    "data_collected_date": "2026-05-04",
+    "calibration_factor": 0.508,
+    "calibration_source": "google_maps_motorbike_2026-05-05"
   },
   {
     "id": "sunshine-riverside",
@@ -215,7 +219,9 @@
     ],
     "estimated_commute_min": 25,
     "investment_potential": "Cao - đất Tây Hồ luôn neo giá cao, view sông là tài sản dài hạn",
-    "data_collected_date": "2026-05-04"
+    "data_collected_date": "2026-05-04",
+    "calibration_factor": 0.638,
+    "calibration_source": "google_maps_motorbike_2026-05-05"
   },
   {
     "id": "ho-guom-plaza",
@@ -295,7 +301,9 @@
     ],
     "estimated_commute_min": 23,
     "investment_potential": "Trung bình - giá vào hợp lý, sức cầu thuê tốt từ dân Linh Đàm/Đại Kim",
-    "data_collected_date": "2026-05-04"
+    "data_collected_date": "2026-05-04",
+    "calibration_factor": 0.512,
+    "calibration_source": "google_maps_motorbike_2026-05-05"
   },
   {
     "id": "hateco-apollo",
@@ -334,7 +342,9 @@
     ],
     "estimated_commute_min": 28,
     "investment_potential": "Trung bình-cao - giá còn dư địa tăng, hạ tầng phía Tây tiếp tục phát triển",
-    "data_collected_date": "2026-05-04"
+    "data_collected_date": "2026-05-04",
+    "calibration_factor": 0.643,
+    "calibration_source": "google_maps_motorbike_2026-05-05"
   },
   {
     "id": "iris-garden",
@@ -373,6 +383,8 @@
     ],
     "estimated_commute_min": 23,
     "investment_potential": "Trung bình - khu vực ổn định, sức cầu thuê tốt từ dân làm Mỹ Đình",
-    "data_collected_date": "2026-05-04"
+    "data_collected_date": "2026-05-04",
+    "calibration_factor": 0.723,
+    "calibration_source": "google_maps_motorbike_2026-05-05"
   }
 ]
