@@ -12,7 +12,7 @@ class RoutingAPIError(Exception):
     pass
 
 
-_BASE_URL = "https://api.heigit.org/v2/matrix/driving-car"
+_BASE_URL = "https://api.openrouteservice.org/v2/matrix/driving-car"
 
 
 def fetch_commute(*, origin_lat, origin_lng, dest_lat, dest_lng, api_key, timeout=15):
