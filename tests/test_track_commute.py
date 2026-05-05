@@ -36,9 +36,13 @@ def test_run_tracking_morning_slot_home_to_work(mock_fetch, tmp_path):
     assert first_call_kwargs["dest_lat"] == config.DESTINATION_LAT
     assert first_call_kwargs["dest_lng"] == config.DESTINATION_LNG
 
-    # motorbike = traffic_min × MOTO_FACTOR (no peak factor — Mapbox has traffic)
-    expected_moto = 22.0 * config.MOTO_FACTOR
-    assert abs(float(rows[0]["duration_motorcycle_min"]) - expected_moto) < 0.01
+    # cluster-a has calibration_factor=0.5 in fixture → overrides default
+    expected_moto_a = 22.0 * 0.5
+    assert abs(float(rows[0]["duration_motorcycle_min"]) - expected_moto_a) < 0.01
+
+    # cluster-b has no calibration_factor → falls back to config.MOTO_FACTOR
+    expected_moto_b = 22.0 * config.MOTO_FACTOR
+    assert abs(float(rows[1]["duration_motorcycle_min"]) - expected_moto_b) < 0.01
 
 
 @patch("scripts.track_commute.fetch_commute")

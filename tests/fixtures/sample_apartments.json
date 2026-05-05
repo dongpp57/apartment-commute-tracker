@@ -3,7 +3,8 @@
     "id": "test-cluster-a",
     "cluster_name": "Test Cluster A",
     "lat": 21.0145,
-    "lng": 105.7423
+    "lng": 105.7423,
+    "calibration_factor": 0.5
   },
   {
     "id": "test-cluster-b",

@@ -61,7 +61,9 @@ def run_tracking(*, apartments_path, log_path, slot, api_key):
             )
             # Mapbox driving-traffic profile: duration already factors live + historical traffic.
             duration_in_traffic = result["duration_min"]
-            duration_motorcycle = duration_in_traffic * config.MOTO_FACTOR
+            # Per-cluster calibration_factor takes precedence over the default.
+            factor = apt.get("calibration_factor", config.MOTO_FACTOR)
+            duration_motorcycle = duration_in_traffic * factor
             row.update({
                 "duration_min": round(duration_in_traffic, 2),
                 "duration_in_traffic_min": round(duration_in_traffic, 2),

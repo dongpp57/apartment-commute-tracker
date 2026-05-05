@@ -4,12 +4,12 @@ DESTINATION_LAT = 21.0263
 DESTINATION_LNG = 105.8094
 DESTINATION_NAME = "Vincom Nguyễn Chí Thanh"
 
-MOTO_FACTOR = 0.67
-# Mapbox driving-traffic profile already includes real-time traffic.
-# Calibrated against Google Maps motorbike directions on 2026-05-05:
-#   HD Mon City → NCT: Google 16 min, Mapbox raw 24 min → real factor 16/24 ≈ 0.67
-# Hanoi motorbikes navigate aggressively (lane filtering, sidewalk hopping) —
-# claw back ~33% vs cars during traffic.
+MOTO_FACTOR = 0.615
+# Default fallback factor: Mapbox car duration → Hanoi motorbike duration.
+# Mean of 4 Google-Maps-calibrated clusters on 2026-05-05 (HD Mon, Smart City,
+# Mỹ Đình Pearl, Hồ Gươm Plaza). Per-cluster overrides live in
+# data/apartments.json under "calibration_factor" — the orchestrator prefers
+# that value when present.
 
 # Morning slots = home → work; Evening slots = work → home (reverse direction).
 SLOTS = ("0700", "0730", "1730", "1800")
