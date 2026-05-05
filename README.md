@@ -4,7 +4,7 @@ Tracks motorbike commute time from 10 candidate apartment clusters in Hanoi to V
 
 ## Setup
 
-See [docs/SETUP.md](docs/SETUP.md) for step-by-step instructions (OpenRouteService API key, GitHub Secrets, Pages).
+See [docs/SETUP.md](docs/SETUP.md) for step-by-step instructions (Mapbox token, GitHub Secrets, Pages).
 
 ## Run locally
 
@@ -13,7 +13,7 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
-export ORS_API_KEY=your_key_here
+export MAPBOX_TOKEN=your_pk_token_here
 python scripts/track_commute.py --slot 0700
 python scripts/report.py
 ```

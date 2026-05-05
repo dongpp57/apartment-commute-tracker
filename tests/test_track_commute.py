@@ -8,9 +8,10 @@ from scripts.lib import config
 
 @patch("scripts.track_commute.fetch_commute")
 def test_run_tracking_morning_slot_home_to_work(mock_fetch, tmp_path):
+    # Mapbox driving-traffic returns duration already including traffic
     mock_fetch.return_value = {
-        "duration_min": 18.0,
-        "duration_in_traffic_min": 18.0,
+        "duration_min": 22.0,
+        "duration_in_traffic_min": 22.0,
         "distance_km": 9.4,
     }
     log_path = tmp_path / "commute_log.csv"
@@ -30,17 +31,21 @@ def test_run_tracking_morning_slot_home_to_work(mock_fetch, tmp_path):
 
     # Morning: origin = apartment, dest = NCT
     first_call_kwargs = mock_fetch.call_args_list[0].kwargs
-    assert first_call_kwargs["origin_lat"] == 21.0145  # apartment a
+    assert first_call_kwargs["origin_lat"] == 21.0145
     assert first_call_kwargs["origin_lng"] == 105.7423
     assert first_call_kwargs["dest_lat"] == config.DESTINATION_LAT
     assert first_call_kwargs["dest_lng"] == config.DESTINATION_LNG
+
+    # motorbike = traffic_min × MOTO_FACTOR (no peak factor — Mapbox has traffic)
+    expected_moto = 22.0 * config.MOTO_FACTOR
+    assert abs(float(rows[0]["duration_motorcycle_min"]) - expected_moto) < 0.01
 
 
 @patch("scripts.track_commute.fetch_commute")
 def test_run_tracking_evening_slot_reverses_direction(mock_fetch, tmp_path):
     mock_fetch.return_value = {
-        "duration_min": 20.0,
-        "duration_in_traffic_min": 20.0,
+        "duration_min": 25.0,
+        "duration_in_traffic_min": 25.0,
         "distance_km": 9.4,
     }
     log_path = tmp_path / "commute_log.csv"
@@ -69,7 +74,7 @@ def test_run_tracking_evening_slot_reverses_direction(mock_fetch, tmp_path):
 def test_run_tracking_records_errors_and_continues(mock_fetch, tmp_path):
     mock_fetch.side_effect = [
         RoutingAPIError("HTTP 429: rate limit"),
-        {"duration_min": 18.0, "duration_in_traffic_min": 18.0, "distance_km": 9.4},
+        {"duration_min": 22.0, "duration_in_traffic_min": 22.0, "distance_km": 9.4},
     ]
     log_path = tmp_path / "commute_log.csv"
 

@@ -59,13 +59,11 @@ def run_tracking(*, apartments_path, log_path, slot, api_key):
                 dest_lat=dest_lat, dest_lng=dest_lng,
                 api_key=api_key,
             )
-            duration_min = result["duration_min"]
-            # ORS has no real-time traffic. Apply Hanoi peak-hour heuristic for
-            # in-traffic estimate, then motorbike correction on top.
-            duration_in_traffic = duration_min * config.PEAK_HOUR_TRAFFIC_FACTOR
+            # Mapbox driving-traffic profile: duration already factors live + historical traffic.
+            duration_in_traffic = result["duration_min"]
             duration_motorcycle = duration_in_traffic * config.MOTO_FACTOR
             row.update({
-                "duration_min": round(duration_min, 2),
+                "duration_min": round(duration_in_traffic, 2),
                 "duration_in_traffic_min": round(duration_in_traffic, 2),
                 "duration_motorcycle_min": round(duration_motorcycle, 2),
                 "distance_km": round(result["distance_km"], 2),
@@ -84,9 +82,9 @@ def main():
     parser.add_argument("--log", default="data/commute_log.csv")
     args = parser.parse_args()
 
-    api_key = os.environ.get("ORS_API_KEY")
+    api_key = os.environ.get("MAPBOX_TOKEN")
     if not api_key:
-        print("ERROR: ORS_API_KEY env var not set", file=sys.stderr)
+        print("ERROR: MAPBOX_TOKEN env var not set", file=sys.stderr)
         sys.exit(1)
 
     run_tracking(

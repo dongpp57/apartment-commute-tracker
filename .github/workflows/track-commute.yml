@@ -62,7 +62,7 @@ jobs:
 
       - name: Track commute
         env:
-          ORS_API_KEY: ${{ secrets.ORS_API_KEY }}
+          MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
           SLOT: ${{ steps.slot.outputs.slot }}
         run: python scripts/track_commute.py --slot "$SLOT"
 

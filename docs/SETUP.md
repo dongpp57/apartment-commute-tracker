@@ -2,28 +2,22 @@
 
 Hướng dẫn cài đặt apartment-commute-tracker từ A→Z. Anh làm 1 lần, sau đó cron tự chạy.
 
-## 1. Đăng ký OpenRouteService API key (free, không cần card)
+## 1. Đăng ký Mapbox token (free, không cần card)
 
-1. Truy cập https://openrouteservice.org/dev/#/signup
-2. Đăng ký tài khoản bằng email (không cần thẻ tín dụng)
+1. Truy cập https://account.mapbox.com/auth/signup/
+2. Đăng ký tài khoản bằng email (KHÔNG cần thẻ tín dụng)
 3. Verify email
-4. Đăng nhập → Dashboard → "Request a token" / "Tokens" tab
-5. Tạo token mới:
-   - Token type: **Free**
-   - Token name: `commute-tracker`
-6. Copy token (chuỗi dài ~63 ký tự, lưu lại)
+4. Đăng nhập → trang chính https://account.mapbox.com/
+5. Mục **"Access tokens"** → đã có sẵn **"Default public token"** (chuỗi `pk.eyJ1...` dài ~80 ký tự)
+6. Copy token đó
 
-**Free tier:** 2000 request/ngày + 40 request/phút. Task này chỉ dùng ~20 request/ngày → dư thoải mái.
+**Free tier:** 100,000 request/tháng cho Directions Matrix API. Task này dùng ~1200 request/tháng → cực dư.
 
-## 2. Caveat về data từ ORS
+## 2. Mapbox traffic data
 
-OpenRouteService dựa trên OpenStreetMap, **không có real-time traffic data** như Google Maps. Vì vậy script áp dụng heuristic 2 tầng:
+Mapbox profile `driving-traffic` có **real-time + historical traffic data thật** (giống Google Maps). Script chỉ apply 1 correction `MOTO_FACTOR = 0.88` cho xe máy né tắc nhanh hơn ô tô ~12%.
 
-- `duration_min` = thời gian ô tô không tắc (ORS trả về)
-- `duration_in_traffic_min` = `duration_min × 1.40` (Hà Nội giờ cao điểm tắc thêm ~40%)
-- `duration_motorcycle_min` = `duration_in_traffic_min × 0.88` (xe máy né tắc nhanh hơn ô tô ~12%)
-
-→ Net: `motorcycle ≈ ors_duration × 1.23`. Sau 2 tuần data, Anh có thể tự đi 1 lần để calibrate `PEAK_HOUR_TRAFFIC_FACTOR` trong `scripts/lib/config.py`.
+Sau 2 tuần data, Anh có thể tự đi 1 lần để calibrate `MOTO_FACTOR` trong `scripts/lib/config.py` nếu cần.
 
 ## 3. Tạo GitHub repo + push code
 
@@ -41,12 +35,14 @@ git push -u origin main
 
 Repo phải **public** để dùng GitHub Pages free (data không nhạy cảm — list BĐS công khai + thời gian commute).
 
-## 4. Add API key vào GitHub Secrets
+## 4. Add Mapbox token vào GitHub Secrets
 
 GitHub repo → Settings → Secrets and variables → Actions → "New repository secret"
-- Name: `ORS_API_KEY`
-- Secret: paste token từ bước 1
+- Name: `MAPBOX_TOKEN`
+- Secret: paste token từ bước 1 (chuỗi `pk.eyJ1...`)
 - Add secret
+
+**Lưu ý:** Nếu Anh đã có secret `ORS_API_KEY` cũ (từ phiên bản trước), Anh có thể delete đi để tránh nhầm lẫn.
 
 ## 5. Bật GitHub Pages
 
@@ -111,8 +107,8 @@ Commit + push, lần cron tiếp theo dùng factor mới.
 
 | Vấn đề | Hướng xử lý |
 |---|---|
-| Workflow fail bước "Track commute" với `HTTP 429` | Quota ORS bị vượt (2000/ngày). Kiểm tra dashboard ORS hoặc tạm pause cron |
-| Workflow fail với `HTTP 403` | API key sai hoặc bị disable. Re-generate token mới trên ORS dashboard |
+| Workflow fail bước "Track commute" với `HTTP 429` | Quota Mapbox bị vượt (100K/tháng). Kiểm tra dashboard Mapbox hoặc tạm pause cron |
+| Workflow fail với `HTTP 401` | Token sai hoặc đã rotate. Lấy token mới từ https://account.mapbox.com/ |
 | Workflow fail bước "Commit" | Repo chưa cấp `contents: write` permission. Settings → Actions → General → Workflow permissions → "Read and write" |
 | GitHub Pages 404 | Settings → Pages source phải là "GitHub Actions" (không phải "Deploy from a branch") |
 | Cron không chạy đúng giờ | GitHub Actions cron có thể delay 5-15 phút khi load cao. Acceptable cho mục đích thống kê trung bình |
