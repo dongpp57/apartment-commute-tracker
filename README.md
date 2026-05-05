@@ -1,6 +1,14 @@
 # Apartment Commute Tracker
 
-Tracks motorbike commute time from 10 candidate apartment clusters in Hanoi to Vincom Nguyễn Chí Thanh, measured daily at 7:00 and 7:30 ICT.
+Tracks motorbike commute time from 10 candidate apartment clusters in Hanoi to Vincom Nguyễn Chí Thanh, measured daily at 7:00, 7:30 (home → work) and 17:30, 18:00 (work → home) ICT.
+
+**Live dashboard:** https://dongpp57.github.io/apartment-commute-tracker/
+
+## Data files
+
+- [`data/apartments.json`](data/apartments.json) — 10 clusters in active tracking
+- [`data/considered_clusters.md`](data/considered_clusters.md) — research log of all clusters considered, with rejection reasons
+- [`data/commute_log.csv`](data/commute_log.csv) — append-only log from cron runs
 
 ## Setup
 
