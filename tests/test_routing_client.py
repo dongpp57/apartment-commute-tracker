@@ -4,10 +4,12 @@ from scripts.lib.routing_client import fetch_commute, RoutingAPIError
 
 
 def _ok_response():
+    # Full 2x2 matrix as Mapbox returns when no sources/destinations params given.
+    # We read [0][1] = origin → destination.
     return {
         "code": "Ok",
-        "durations": [[1080.0]],     # 18 min in seconds
-        "distances": [[9400.0]],     # meters
+        "durations": [[0, 1080.0], [1100.0, 0]],     # [0][1] = 1080s = 18 min
+        "distances": [[0, 9400.0], [9500.0, 0]],     # [0][1] = 9400m = 9.4 km
     }
 
 
@@ -70,7 +72,11 @@ def test_fetch_commute_no_route_null(mock_get):
     """Mapbox returns null in matrix when no route possible."""
     mock_get.return_value = MagicMock(
         status_code=200,
-        json=lambda: {"code": "Ok", "durations": [[None]], "distances": [[None]]},
+        json=lambda: {
+            "code": "Ok",
+            "durations": [[0, None], [None, 0]],
+            "distances": [[0, None], [None, 0]],
+        },
     )
     with pytest.raises(RoutingAPIError, match="no route"):
         fetch_commute(
