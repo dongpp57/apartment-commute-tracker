@@ -116,46 +116,45 @@
     "calibration_source": "google_maps_motorbike_2026-05-05"
   },
   {
-    "id": "vinhomes-ocean-park",
-    "cluster_name": "Vinhomes Ocean Park 1",
-    "district": "Gia Lâm",
-    "representative_address": "Đa Tốn, Gia Lâm, Hà Nội",
-    "lat": 20.9931,
-    "lng": 105.941,
+    "id": "hoang-thanh-pearl",
+    "cluster_name": "Hoàng Thành Pearl",
+    "district": "Nam Từ Liêm",
+    "representative_address": "55 Nguyễn Văn Giáp (đường K2), Cầu Diễn, Nam Từ Liêm, Hà Nội",
+    "lat": 21.0405,
+    "lng": 105.7445,
     "category": "cao_cap",
     "sample_units": [
       {
-        "tower": "The Pavilion",
-        "area_m2": 63,
+        "tower": "Tòa A",
+        "area_m2": 79,
         "bedrooms": 2,
-        "price_billion_vnd": 5.05,
-        "status": "đã bàn giao",
-        "source_url": "https://batdongsan.com.vn/ban-can-ho-chung-cu-vinhomes-ocean-park-gia-lam"
+        "price_billion_vnd": 5.0,
+        "status": "đã bàn giao - chuyển nhượng",
+        "source_url": "https://batdongsan.com.vn/ban-can-ho-chung-cu-hoang-thanh-pearl/2pn"
       },
       {
-        "tower": "The London",
-        "area_m2": 75.2,
+        "tower": "Tòa A",
+        "area_m2": 81,
         "bedrooms": 2,
-        "price_billion_vnd": 4.9,
-        "status": "đã bàn giao",
-        "source_url": "https://vinhomeoceanpark.vn/"
+        "price_billion_vnd": 5.6,
+        "status": "đã bàn giao - full nội thất cao cấp",
+        "source_url": "https://www.housenow.com.vn/can-ho-chung-cu/hoang-thanh-pearl/250985"
       }
     ],
     "pros": [
-      "Hệ sinh thái Vinhomes hoàn chỉnh (Vinmec, Vinschool, Vincom Mega Mall)",
-      "Hồ nước mặn nhân tạo + biển hồ độc đáo",
-      "Diện tích 63-75m² tốt cho 2PN, tiện ích thể thao đa dạng"
+      "Vị trí cận ga Cầu Diễn (Metro số 5 tương lai) + ga Vinhomes Hàm Nghi",
+      "Diện tích 2PN rộng 79-81m² (top trong shortlist)",
+      "Sát Mỹ Đình, gần BigC, Keangnam, đường Hồ Tùng Mậu"
     ],
     "cons": [
-      "Xa trung tâm nhất trong list (~17 km)",
-      "Phụ thuộc cầu Vĩnh Tuy/Thanh Trì - tắc nặng giờ cao điểm",
-      "Chưa có Metro nối thẳng"
+      "Giá borderline - căn 79m² basic ~5 tỉ là vừa khít budget, full nội thất 5.6 tỉ vượt nhẹ",
+      "Đường Nguyễn Văn Giáp giờ cao điểm tắc",
+      "Tower duy nhất 30 tầng - mật độ tập trung"
     ],
-    "estimated_commute_min": 32,
-    "investment_potential": "Cao - 'thành phố thu nhỏ' Vingroup, hạ tầng Đông Hà Nội đang tăng tốc, vành đai 3,5 và cầu Trần Hưng Đạo",
-    "data_collected_date": "2026-05-04",
-    "calibration_factor": 0.961,
-    "calibration_source": "google_maps_motorbike_2026-05-05"
+    "estimated_commute_min": 18,
+    "investment_potential": "Trung bình-cao - hạ tầng Cầu Diễn tăng tốc với Metro số 5 (Văn Cao - Hòa Lạc), gần ga là điểm cộng dài hạn",
+    "data_collected_date": "2026-05-05",
+    "note": "Anh đề xuất add - cạnh ga tàu, tiện đi làm. Calibration_factor chưa có (cần Anh đo Google Maps), tạm dùng default 0.645"
   },
   {
     "id": "mipec-riverside",

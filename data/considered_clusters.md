@@ -20,16 +20,22 @@ Xem chi tiết tại [`apartments.json`](./apartments.json) và [dashboard live]
 | Mỹ Đình Pearl | Nam Từ Liêm | 3.4-4.0 tỉ | 12p |
 | Vinhomes Smart City | Nam Từ Liêm | 4.8 tỉ | 18p |
 | Iris Garden | Nam Từ Liêm | 4.0-4.7 tỉ | 18p |
+| **Hoàng Thành Pearl** ✨ | Nam Từ Liêm | 5.0-5.6 tỉ | ~18p (chưa calibrate) |
 | Hateco Apollo | Nam Từ Liêm | 3.9-4.5 tỉ | 22p |
 | Sunshine Riverside | Tây Hồ | 5.0 tỉ | 15p |
 | Mipec Riverside | Long Biên | 4.5 tỉ | 21p |
 | Hồ Gươm Plaza | Hà Đông | 4.3-5.0 tỉ | 17p |
 | Eco Green City | Thanh Trì | 4.9-5.0 tỉ | 13p |
-| Vinhomes Ocean Park 1 | Gia Lâm | 4.9-5.05 tỉ | 39p ⚠️ |
 
 ---
 
 ## ❌ Các cụm đã loại — Lý do
+
+### Loại sau khi đã track (swap với cụm khác)
+
+| Cụm | District | Giá 2PN | Lý do |
+|---|---|---|---|
+| **Vinhomes Ocean Park 1** | Gia Lâm | 4.9-5.05 tỉ (63-75m²) | Calibrated motorbike commute = 39p, vượt threshold 30p Anh đặt ra. Distance 20.9 km — cụm xa nhất trong list. Swap với Hoàng Thành Pearl (2026-05-05) vì gần ga tàu + commute ngắn hơn. Vẫn là cụm tốt về dài hạn (Vinhomes ecosystem, Metro tương lai) — Anh có thể re-add nếu nâng threshold lên 40p. |
 
 ### Loại vì vượt budget 5 tỉ
 
