@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Commute Tracker — Vincom Nguyễn Chí Thanh</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  body { font-family: -apple-system, system-ui, sans-serif; max-width: 980px; margin: 24px auto; padding: 0 16px; }
+  h1 { font-size: 22px; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0 28px; font-size: 13px; }
+  th, td { border: 1px solid #ddd; padding: 6px 10px; text-align: left; }
+  th { background: #f4f4f4; }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .flag-warn { color: #c0392b; }
+  .flag-unstable { color: #e67e22; }
+  canvas { max-width: 100%; }
+  .meta { color: #666; font-size: 12px; }
+</style>
+</head>
+<body>
+<h1>Commute Tracker — Vincom Nguyễn Chí Thanh</h1>
+<p class="meta">Updated: 2026-05-05T01:52 · Mode: motorcycle (driving × 0.88)</p>
+
+
+<h2>Slot 07:00</h2>
+<table>
+  <tr>
+    <th>#</th><th>Cluster</th><th>District</th>
+    <th>Mean</th><th>p50</th><th>p90</th><th>Std</th><th>Samples</th><th>Flags</th>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>1</td>
+    <td>HD Mon City (Hải Đăng City)</td>
+    <td>Nam Từ Liêm</td>
+    <td class="num">12.5</td>
+    <td class="num">12.5</td>
+    <td class="num">12.5</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>2</td>
+    <td>Sunshine Riverside (Phú Thượng)</td>
+    <td>Tây Hồ</td>
+    <td class="num">14.2</td>
+    <td class="num">14.2</td>
+    <td class="num">14.2</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>3</td>
+    <td>Hồ Gươm Plaza</td>
+    <td>Hà Đông</td>
+    <td class="num">14.4</td>
+    <td class="num">14.4</td>
+    <td class="num">14.4</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>4</td>
+    <td>Eco Green City</td>
+    <td>Thanh Trì</td>
+    <td class="num">15.6</td>
+    <td class="num">15.6</td>
+    <td class="num">15.6</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>5</td>
+    <td>Iris Garden Mỹ Đình</td>
+    <td>Nam Từ Liêm</td>
+    <td class="num">15.8</td>
+    <td class="num">15.8</td>
+    <td class="num">15.8</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>6</td>
+    <td>Mỹ Đình Pearl</td>
+    <td>Nam Từ Liêm</td>
+    <td class="num">16.8</td>
+    <td class="num">16.8</td>
+    <td class="num">16.8</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>7</td>
+    <td>Vinhomes Smart City</td>
+    <td>Nam Từ Liêm</td>
+    <td class="num">17.2</td>
+    <td class="num">17.2</td>
+    <td class="num">17.2</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>8</td>
+    <td>Hateco Apollo Xuân Phương</td>
+    <td>Nam Từ Liêm</td>
+    <td class="num">20.0</td>
+    <td class="num">20.0</td>
+    <td class="num">20.0</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>9</td>
+    <td>Mipec Riverside Long Biên</td>
+    <td>Long Biên</td>
+    <td class="num">22.3</td>
+    <td class="num">22.3</td>
+    <td class="num">22.3</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>10</td>
+    <td>Vinhomes Ocean Park 1</td>
+    <td>Gia Lâm</td>
+    <td class="num">34.0</td>
+    <td class="num">34.0</td>
+    <td class="num">34.0</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      <span class="flag-warn">&#9888;&#65039; p90&gt;30</span>
+      
+    </td>
+  </tr>
+  
+</table>
+
+<canvas id="chart-0700" height="120"></canvas>
+<script>
+new Chart(document.getElementById('chart-0700'), {
+  type: 'bar',
+  data: {
+    labels: ["hd-mon-city", "sunshine-riverside", "ho-guom-plaza", "eco-green-city", "iris-garden", "my-dinh-pearl", "vinhomes-smart-city", "hateco-apollo", "mipec-riverside", "vinhomes-ocean-park"],
+    datasets: [{
+      label: 'Mean motorbike commute (min) — slot 0700',
+      data: [12.52, 14.22, 14.39, 15.55, 15.82, 16.84, 17.17, 19.98, 22.28, 33.95],
+    }]
+  }
+});
+</script>
+
+<h2>Slot 07:30</h2>
+<table>
+  <tr>
+    <th>#</th><th>Cluster</th><th>District</th>
+    <th>Mean</th><th>p50</th><th>p90</th><th>Std</th><th>Samples</th><th>Flags</th>
+  </tr>
+  
+</table>
+
+<canvas id="chart-0730" height="120"></canvas>
+<script>
+new Chart(document.getElementById('chart-0730'), {
+  type: 'bar',
+  data: {
+    labels: [],
+    datasets: [{
+      label: 'Mean motorbike commute (min) — slot 0730',
+      data: [],
+    }]
+  }
+});
+</script>
+
+
+</body>
+</html>
