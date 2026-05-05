@@ -11,4 +11,10 @@ def test_moto_factor_default():
 
 
 def test_slots_defined():
-    assert config.SLOTS == ("0700", "0730")
+    assert config.SLOTS == ("0700", "0730", "1730", "1800")
+    assert config.MORNING_SLOTS == ("0700", "0730")
+    assert config.EVENING_SLOTS == ("1730", "1800")
+
+
+def test_csv_has_direction_column():
+    assert "direction" in config.CSV_COLUMNS

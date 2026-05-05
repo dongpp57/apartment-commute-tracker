@@ -10,12 +10,16 @@ MOTO_FACTOR = 0.88
 # Net effect: motorbike_peak ≈ ors_duration × PEAK_HOUR_TRAFFIC_FACTOR × MOTO_FACTOR
 PEAK_HOUR_TRAFFIC_FACTOR = 1.40
 
-SLOTS = ("0700", "0730")
+# Morning slots = home → work; Evening slots = work → home (reverse direction).
+SLOTS = ("0700", "0730", "1730", "1800")
+MORNING_SLOTS = ("0700", "0730")
+EVENING_SLOTS = ("1730", "1800")
 
 CSV_COLUMNS = (
     "timestamp_ict",
     "apartment_id",
     "slot",
+    "direction",
     "duration_min",
     "duration_in_traffic_min",
     "duration_motorcycle_min",

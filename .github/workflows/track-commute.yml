@@ -2,18 +2,23 @@ name: Track Commute
 
 on:
   schedule:
-    - cron: '0 0 * * *'      # 7:00 ICT (UTC+7)
-    - cron: '30 0 * * *'     # 7:30 ICT
+    # ICT = UTC+7. Cron in UTC.
+    - cron: '0 0 * * *'      # 7:00 ICT (home → work)
+    - cron: '30 0 * * *'     # 7:30 ICT (home → work)
+    - cron: '30 10 * * *'    # 17:30 ICT (work → home)
+    - cron: '0 11 * * *'     # 18:00 ICT (work → home)
   workflow_dispatch:
     inputs:
       slot:
-        description: 'Slot to run (0700 or 0730)'
+        description: 'Slot to run'
         required: true
         default: '0700'
         type: choice
         options:
           - '0700'
           - '0730'
+          - '1730'
+          - '1800'
 
 permissions:
   contents: write
@@ -42,13 +47,17 @@ jobs:
         run: |
           if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
             case "$INPUT_SLOT" in
-              0700|0730) echo "slot=$INPUT_SLOT" >> "$GITHUB_OUTPUT" ;;
+              0700|0730|1730|1800) echo "slot=$INPUT_SLOT" >> "$GITHUB_OUTPUT" ;;
               *) echo "Invalid slot: $INPUT_SLOT" >&2; exit 1 ;;
             esac
-          elif [ "$SCHEDULE" = "0 0 * * *" ]; then
-            echo "slot=0700" >> "$GITHUB_OUTPUT"
           else
-            echo "slot=0730" >> "$GITHUB_OUTPUT"
+            case "$SCHEDULE" in
+              "0 0 * * *")    echo "slot=0700" >> "$GITHUB_OUTPUT" ;;
+              "30 0 * * *")   echo "slot=0730" >> "$GITHUB_OUTPUT" ;;
+              "30 10 * * *")  echo "slot=1730" >> "$GITHUB_OUTPUT" ;;
+              "0 11 * * *")   echo "slot=1800" >> "$GITHUB_OUTPUT" ;;
+              *) echo "Unknown schedule: $SCHEDULE" >&2; exit 1 ;;
+            esac
           fi
 
       - name: Track commute

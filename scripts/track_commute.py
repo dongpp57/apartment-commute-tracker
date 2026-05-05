@@ -1,4 +1,8 @@
-"""Loop apartments, call routing API, append to log."""
+"""Loop apartments, call routing API, append to log.
+
+Morning slots (0700, 0730): measure home → work commute.
+Evening slots (1730, 1800): measure work → home commute (reversed direction).
+"""
 
 import argparse
 import json
@@ -30,18 +34,29 @@ def run_tracking(*, apartments_path, log_path, slot, api_key):
 
     timestamp = datetime.now(tz=ICT).replace(microsecond=0).isoformat()
 
+    is_evening = slot in config.EVENING_SLOTS
+    direction = "work_to_home" if is_evening else "home_to_work"
+
     for apt in apartments:
         row = {
             "timestamp_ict": timestamp,
             "apartment_id": apt["id"],
             "slot": slot,
+            "direction": direction,
         }
         try:
+            if is_evening:
+                # Work → Home: origin = NCT, destination = apartment
+                origin_lat, origin_lng = config.DESTINATION_LAT, config.DESTINATION_LNG
+                dest_lat, dest_lng = apt["lat"], apt["lng"]
+            else:
+                # Home → Work: origin = apartment, destination = NCT
+                origin_lat, origin_lng = apt["lat"], apt["lng"]
+                dest_lat, dest_lng = config.DESTINATION_LAT, config.DESTINATION_LNG
+
             result = fetch_commute(
-                origin_lat=apt["lat"],
-                origin_lng=apt["lng"],
-                dest_lat=config.DESTINATION_LAT,
-                dest_lng=config.DESTINATION_LNG,
+                origin_lat=origin_lat, origin_lng=origin_lng,
+                dest_lat=dest_lat, dest_lng=dest_lng,
                 api_key=api_key,
             )
             duration_min = result["duration_min"]

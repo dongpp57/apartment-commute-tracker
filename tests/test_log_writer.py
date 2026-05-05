@@ -59,4 +59,5 @@ def test_append_error_row_with_blank_metrics(tmp_path):
         lines = f.readlines()
     assert len(lines) == 2
     assert "ERROR_quota_exceeded" in lines[1]
-    assert lines[1].count(",") == 7  # 8 columns = 7 commas
+    # 9 columns (timestamp, apartment, slot, direction, 4 metrics, status) = 8 commas
+    assert lines[1].count(",") == len(CSV_COLUMNS) - 1
