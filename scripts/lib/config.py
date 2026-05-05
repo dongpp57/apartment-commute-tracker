@@ -6,9 +6,11 @@ DESTINATION_NAME = "Vincom Nguyễn Chí Thanh"
 
 MOTO_FACTOR = 0.88
 # OpenRouteService returns car duration without real-time traffic.
-# Hanoi peak hour adds ~40% to baseline car time; motorbike then claws back ~12%.
-# Net effect: motorbike_peak ≈ ors_duration × PEAK_HOUR_TRAFFIC_FACTOR × MOTO_FACTOR
-PEAK_HOUR_TRAFFIC_FACTOR = 1.40
+# Calibrated against Google Maps peak-hour motorbike on 2026-05-05:
+#   HD Mon City: ORS raw 10.16 min, Google motorbike 17 min → real factor ≈ 1.67
+# motorbike_peak ≈ ors_duration × PEAK_HOUR_TRAFFIC_FACTOR × MOTO_FACTOR
+# 1.90 × 0.88 = 1.67
+PEAK_HOUR_TRAFFIC_FACTOR = 1.90
 
 # Morning slots = home → work; Evening slots = work → home (reverse direction).
 SLOTS = ("0700", "0730", "1730", "1800")
