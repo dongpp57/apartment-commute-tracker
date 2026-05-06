@@ -7,14 +7,18 @@
     "lat": 21.0145,
     "lng": 105.7423,
     "category": "cao_cap",
+    "price_status": "in_budget",
+    "price_range_billion_vnd": [4.1, 4.3],
+    "price_note": "Giá tham khảo batdongsan.com.vn T5/2026 — căn 2PN 55m² (Sapphire 1, Sola Park). Có thể thương lượng giảm 5-15% khi đi xem thực tế.",
+    "price_source": "https://batdongsan.com.vn/ban-can-ho-chung-cu-vinhomes-smart-city",
+    "price_data_date": "2026-05-05",
     "sample_units": [
       {
-        "tower": "Sapphire 1",
+        "tower": "Sapphire 1 / Sola Park",
         "area_m2": 55,
         "bedrooms": 2,
-        "price_billion_vnd": 4.8,
-        "status": "đã bàn giao",
-        "source_url": "https://batdongsan.com.vn/ban-can-ho-chung-cu-vinhomes-smart-city"
+        "price_billion_vnd": 4.2,
+        "status": "đã bàn giao - chuyển nhượng"
       }
     ],
     "pros": [
@@ -41,22 +45,18 @@
     "lat": 21.0335,
     "lng": 105.772,
     "category": "cao_cap",
+    "price_status": "in_budget",
+    "price_range_billion_vnd": [4.6, 5.0],
+    "price_note": "Giá tham khảo batdongsan.com.vn T5/2026 — căn 67m² basic 4.6 tỉ, full nội thất 5-6.5 tỉ. Có thể thương lượng giảm 5-15%.",
+    "price_source": "https://batdongsan.com.vn/ban-can-ho-chung-cu-mon-city",
+    "price_data_date": "2026-05-05",
     "sample_units": [
       {
-        "tower": "Tòa B",
+        "tower": "Tòa B / C",
         "area_m2": 67,
         "bedrooms": 2,
-        "price_billion_vnd": 5.0,
-        "status": "đã bàn giao",
-        "source_url": "https://homedy.com/ban-can-ho-khu-chung-cu-hd-mon-city"
-      },
-      {
-        "tower": "Tòa C",
-        "area_m2": 61.5,
-        "bedrooms": 2,
         "price_billion_vnd": 4.8,
-        "status": "đã bàn giao",
-        "source_url": "https://batdongsan.com.vn/du-an-khu-phuc-hop-nam-tu-liem/mon-city-pj2198"
+        "status": "đã bàn giao - chuyển nhượng"
       }
     ],
     "pros": [
@@ -68,7 +68,7 @@
       "Trục Hàm Nghi - Lê Đức Thọ tắc giờ cao điểm",
       "Mật độ tòa khá dày"
     ],
-    "estimated_commute_min": 22,
+    "estimated_commute_min": 14,
     "investment_potential": "Trung bình - khu vực Mỹ Đình 2 đã định giá, ít sóng nhưng thanh khoản tốt",
     "data_collected_date": "2026-05-04",
     "calibration_factor": 0.583,
@@ -82,35 +82,31 @@
     "lat": 21.0215,
     "lng": 105.7625,
     "category": "trung_cap",
+    "price_status": "over_budget_reference",
+    "price_range_billion_vnd": [5.9, 6.6],
+    "price_note": "⚠️ VƯỢT BUDGET 5 TỈ - giá tham khảo batdongsan.com.vn T5/2026 căn 73m² 5.9-6.6 tỉ. Em research lúc đầu sai (3.4-4 tỉ là giá CĐT mở bán cũ 2020). Giữ lại để track commute, không phải candidate trong budget.",
+    "price_source": "https://batdongsan.com.vn/ban-can-ho-chung-cu-my-dinh-pearl",
+    "price_data_date": "2026-05-05",
     "sample_units": [
       {
-        "tower": "P1",
+        "tower": "P1 / P2",
         "area_m2": 73,
         "bedrooms": 2,
-        "price_billion_vnd": 3.4,
-        "status": "đã bàn giao",
-        "source_url": "https://batdongsan.com.vn/ban-can-ho-chung-cu-my-dinh-pearl/gia-tu-3-ty-den-5-ty"
-      },
-      {
-        "tower": "P2",
-        "area_m2": 79,
-        "bedrooms": 2,
-        "price_billion_vnd": 4.0,
-        "status": "đã bàn giao",
-        "source_url": "https://homedy.com/ban-can-ho-my-dinh-pearl"
+        "price_billion_vnd": 6.5,
+        "status": "đã bàn giao - chuyển nhượng"
       }
     ],
     "pros": [
-      "Giá rất tốt cho khu vực Mỹ Đình (dưới 4 tỉ là hiếm)",
       "Diện tích 73-79m² rộng rãi cho 2PN",
-      "View hồ điều hòa Phú Đô + sân golf"
+      "View hồ điều hòa Phú Đô + sân golf",
+      "Commute nhanh nhất trong list (12 phút)"
     ],
     "cons": [
-      "Đường Châu Văn Liêm chưa kết nối tốt",
-      "Đi vào trục Lê Đức Thọ giờ cao điểm tắc"
+      "Giá vượt budget rõ rệt (5.9-6.6 tỉ vs ngân sách 5 tỉ)",
+      "Đường Châu Văn Liêm chưa kết nối tốt"
     ],
-    "estimated_commute_min": 24,
-    "investment_potential": "Trung bình - giá đang dưới mặt bằng khu vực, tiềm năng tăng giá khi hạ tầng quanh sân vận động Mỹ Đình hoàn thiện",
+    "estimated_commute_min": 12,
+    "investment_potential": "Cao - vị trí gần sân vận động Mỹ Đình, hạ tầng tốt",
     "data_collected_date": "2026-05-04",
     "calibration_factor": 0.47,
     "calibration_source": "google_maps_motorbike_2026-05-05"
@@ -123,22 +119,18 @@
     "lat": 21.0405,
     "lng": 105.7445,
     "category": "cao_cap",
+    "price_status": "over_budget_reference",
+    "price_range_billion_vnd": [4.8, 6.4],
+    "price_note": "⚠️ BORDERLINE - giá tham khảo batdongsan.com.vn T5/2026 căn 79-80m² 4.8-6.4 tỉ tùy nội thất. Căn basic ~4.8 tỉ trong budget, căn full nội thất 6.4 tỉ vượt. Cần verify khi đi xem.",
+    "price_source": "https://batdongsan.com.vn/ban-can-ho-chung-cu-hoang-thanh-pearl/2pn",
+    "price_data_date": "2026-05-05",
     "sample_units": [
       {
         "tower": "Tòa A",
-        "area_m2": 79,
+        "area_m2": 80,
         "bedrooms": 2,
-        "price_billion_vnd": 5.0,
-        "status": "đã bàn giao - chuyển nhượng",
-        "source_url": "https://batdongsan.com.vn/ban-can-ho-chung-cu-hoang-thanh-pearl/2pn"
-      },
-      {
-        "tower": "Tòa A",
-        "area_m2": 81,
-        "bedrooms": 2,
-        "price_billion_vnd": 5.6,
-        "status": "đã bàn giao - full nội thất cao cấp",
-        "source_url": "https://www.housenow.com.vn/can-ho-chung-cu/hoang-thanh-pearl/250985"
+        "price_billion_vnd": 5.5,
+        "status": "đã bàn giao - chuyển nhượng"
       }
     ],
     "pros": [
@@ -147,7 +139,7 @@
       "Sát Mỹ Đình, gần BigC, Keangnam, đường Hồ Tùng Mậu"
     ],
     "cons": [
-      "Giá borderline - căn 79m² basic ~5 tỉ là vừa khít budget, full nội thất 5.6 tỉ vượt nhẹ",
+      "Căn full nội thất vượt budget (~6.4 tỉ)",
       "Đường Nguyễn Văn Giáp giờ cao điểm tắc",
       "Tower duy nhất 30 tầng - mật độ tập trung"
     ],
@@ -164,14 +156,18 @@
     "lat": 21.0445,
     "lng": 105.861,
     "category": "cao_cap",
+    "price_status": "over_budget_reference",
+    "price_range_billion_vnd": [6.5, 8.0],
+    "price_note": "⚠️ VƯỢT BUDGET 5 TỈ - giá tham khảo batdongsan.com.vn T5/2026 căn 69-82m² 6.5-8 tỉ. Em research lúc đầu sai (4.5 tỉ). Giữ lại để track commute.",
+    "price_source": "https://batdongsan.com.vn/ban-can-ho-chung-cu-mipec-riverside",
+    "price_data_date": "2026-05-05",
     "sample_units": [
       {
         "tower": "C",
         "area_m2": 69,
         "bedrooms": 2,
-        "price_billion_vnd": 4.5,
-        "status": "đã bàn giao",
-        "source_url": "https://homedy.com/ban-can-ho-mipec-riverside"
+        "price_billion_vnd": 7.0,
+        "status": "đã bàn giao - chuyển nhượng"
       }
     ],
     "pros": [
@@ -180,10 +176,10 @@
       "Khu vực dân trí cao, an ninh tốt"
     ],
     "cons": [
-      "Cầu Long Biên + cầu Chương Dương tắc giờ cao điểm",
-      "Quỹ căn 2PN 69m² dưới 5 tỉ ngày càng hiếm"
+      "Giá vượt budget rõ rệt (6.5-8 tỉ)",
+      "Cầu Long Biên + cầu Chương Dương tắc giờ cao điểm"
     ],
-    "estimated_commute_min": 22,
+    "estimated_commute_min": 21,
     "investment_potential": "Cao - vị trí cận trung tâm, view sông là lợi thế khan hiếm",
     "data_collected_date": "2026-05-04",
     "calibration_factor": 0.508,
@@ -197,14 +193,18 @@
     "lat": 21.081,
     "lng": 105.8155,
     "category": "cao_cap",
+    "price_status": "over_budget_reference",
+    "price_range_billion_vnd": [4.9, 6.7],
+    "price_note": "⚠️ BORDERLINE/VƯỢT - giá tham khảo batdongsan.com.vn T5/2026 căn R3 64m² ~6.7 tỉ. Quỹ căn dưới 5 tỉ rất hạn chế (chủ yếu căn nhỏ R1/R2). Em research sai lúc đầu (5 tỉ).",
+    "price_source": "https://batdongsan.com.vn/ban-can-ho-chung-cu-sunshine-riverside/2pn",
+    "price_data_date": "2026-05-05",
     "sample_units": [
       {
         "tower": "R3",
         "area_m2": 64,
         "bedrooms": 2,
-        "price_billion_vnd": 5.0,
-        "status": "đã bàn giao",
-        "source_url": "https://batdongsan.com.vn/ban-can-ho-chung-cu-sunshine-riverside/2pn"
+        "price_billion_vnd": 6.7,
+        "status": "đã bàn giao - chuyển nhượng"
       }
     ],
     "pros": [
@@ -213,10 +213,10 @@
       "Đi sân bay Nội Bài rất nhanh"
     ],
     "cons": [
-      "Quỹ căn 2PN dưới 5 tỉ rất hạn chế (chủ yếu căn nhỏ R3 64m²)",
+      "Quỹ căn 2PN dưới 5 tỉ rất hạn chế",
       "Đường Lạc Long Quân đông buổi sáng"
     ],
-    "estimated_commute_min": 25,
+    "estimated_commute_min": 15,
     "investment_potential": "Cao - đất Tây Hồ luôn neo giá cao, view sông là tài sản dài hạn",
     "data_collected_date": "2026-05-04",
     "calibration_factor": 0.638,
@@ -226,38 +226,34 @@
     "id": "ho-guom-plaza",
     "cluster_name": "Hồ Gươm Plaza",
     "district": "Hà Đông",
-    "representative_address": "110 Trần Phú, Mộ Lao, Hà Đông, Hà Nội",
+    "representative_address": "102-104 Trần Phú, Mộ Lao, Hà Đông, Hà Nội",
     "lat": 20.981,
     "lng": 105.7895,
     "category": "trung_cap",
+    "price_status": "in_budget",
+    "price_range_billion_vnd": [3.98, 4.5],
+    "price_note": "Giá tham khảo batdongsan.com.vn T5/2026 — căn 65m² ~3.98-4.3 tỉ (in budget), căn 76m² 6.25 tỉ (vượt). Anh nên tập trung căn 65m².",
+    "price_source": "https://batdongsan.com.vn/ban-can-ho-chung-cu-ho-guom-plaza",
+    "price_data_date": "2026-05-05",
     "sample_units": [
       {
-        "tower": "A",
+        "tower": "A / B",
         "area_m2": 65,
         "bedrooms": 2,
-        "price_billion_vnd": 4.3,
-        "status": "đã bàn giao",
-        "source_url": "https://batdongsan.com.vn/ban-can-ho-chung-cu-ho-guom-plaza"
-      },
-      {
-        "tower": "B",
-        "area_m2": 76,
-        "bedrooms": 2,
-        "price_billion_vnd": 5.0,
-        "status": "đã bàn giao",
-        "source_url": "https://homedy.com/ban-can-ho-ho-guom-plaza"
+        "price_billion_vnd": 4.2,
+        "status": "đã bàn giao - chuyển nhượng"
       }
     ],
     "pros": [
       "Vị trí cận trung tâm Hà Đông, gần BigC, Aeon",
-      "Giá tốt cho căn 76m² 2PN dưới 5 tỉ",
+      "Giá tốt cho căn 65m² 2PN dưới 4.5 tỉ",
       "Đã bàn giao lâu, cộng đồng ổn định"
     ],
     "cons": [
       "Trục Trần Phú - Nguyễn Trãi cực kỳ tắc giờ cao điểm",
-      "Phụ thuộc Metro Cát Linh - Hà Đông"
+      "Căn 76m² vượt budget (6.25 tỉ)"
     ],
-    "estimated_commute_min": 26,
+    "estimated_commute_min": 17,
     "investment_potential": "Trung bình - giá đã định, tiềm năng tăng phụ thuộc Metro số 2A và quy hoạch Hà Đông",
     "data_collected_date": "2026-05-04",
     "calibration_factor": 0.697,
@@ -271,34 +267,31 @@
     "lat": 20.9755,
     "lng": 105.8108,
     "category": "trung_cap",
+    "price_status": "in_budget",
+    "price_range_billion_vnd": [4.9, 5.0],
+    "price_note": "Giá tham khảo batdongsan.com.vn T5/2026 — căn 67m² basic 4.9 tỉ vừa khít budget, căn full nội thất CT3 5.9-6.1 tỉ vượt. Cần đi xem để xác định nội thất phù hợp.",
+    "price_source": "https://batdongsan.com.vn/ban-can-ho-chung-cu-eco-green-city",
+    "price_data_date": "2026-05-05",
     "sample_units": [
       {
         "tower": "CT2",
         "area_m2": 67,
         "bedrooms": 2,
-        "price_billion_vnd": 4.9,
-        "status": "đã bàn giao",
-        "source_url": "https://batdongsan.com.vn/ban-can-ho-chung-cu-eco-green-city"
-      },
-      {
-        "tower": "CT3",
-        "area_m2": 67,
-        "bedrooms": 2,
-        "price_billion_vnd": 5.0,
-        "status": "đã bàn giao",
-        "source_url": "https://homedy.com/ban-nha-dat-chung-cu-eco-green-city"
+        "price_billion_vnd": 4.95,
+        "status": "đã bàn giao - chuyển nhượng"
       }
     ],
     "pros": [
       "Sát Vành đai 3 - đi nhiều hướng nhanh",
-      "Giá tốt 4.9-5.0 tỉ căn 67m² full nội thất",
+      "Giá basic vừa khít 5 tỉ",
       "Cận sông Tô Lịch, mật độ cây xanh khá"
     ],
     "cons": [
       "Ngã tư Khuất Duy Tiến - Nguyễn Xiển kẹt cứng",
-      "Khu vực ô nhiễm tiếng ồn Vành đai 3"
+      "Khu vực ô nhiễm tiếng ồn Vành đai 3",
+      "Căn full nội thất vượt budget"
     ],
-    "estimated_commute_min": 23,
+    "estimated_commute_min": 13,
     "investment_potential": "Trung bình - giá vào hợp lý, sức cầu thuê tốt từ dân Linh Đàm/Đại Kim",
     "data_collected_date": "2026-05-04",
     "calibration_factor": 0.512,
@@ -312,34 +305,30 @@
     "lat": 21.0395,
     "lng": 105.728,
     "category": "trung_cap",
+    "price_status": "in_budget",
+    "price_range_billion_vnd": [4.3, 5.0],
+    "price_note": "Giá tham khảo batdongsan.com.vn T5/2026 — căn 60m² 4.3 tỉ (full nội thất), căn 65m² 4.8-5.25 tỉ. Cụm có nhiều căn vừa khít budget.",
+    "price_source": "https://batdongsan.com.vn/ban-can-ho-chung-cu-hateco-apollo",
+    "price_data_date": "2026-05-05",
     "sample_units": [
       {
-        "tower": "CT1",
-        "area_m2": 69,
+        "tower": "CT1 / CT2",
+        "area_m2": 65,
         "bedrooms": 2,
-        "price_billion_vnd": 4.5,
-        "status": "đã bàn giao",
-        "source_url": "https://batdongsan.com.vn/ban-can-ho-chung-cu-hateco-apollo"
-      },
-      {
-        "tower": "CT2",
-        "area_m2": 60,
-        "bedrooms": 2,
-        "price_billion_vnd": 3.9,
-        "status": "đã bàn giao",
-        "source_url": "https://homedy.com/ban-can-ho-hateco-apollo-xuan-phuong"
+        "price_billion_vnd": 4.8,
+        "status": "đã bàn giao - chuyển nhượng"
       }
     ],
     "pros": [
       "Hồ điều hòa 7000m² nội khu - hiếm có",
       "Mật độ xây dựng thấp 35-39%",
-      "Giá rất tốt cho cao_cap-trung_cap"
+      "Giá hợp lý cho khu vực phía Tây"
     ],
     "cons": [
       "Vị trí xa nhất phía Tây so với các cụm Mỹ Đình",
       "Đường 70 chật, đi Phạm Hùng/Trần Hữu Dực giờ cao điểm chậm"
     ],
-    "estimated_commute_min": 28,
+    "estimated_commute_min": 22,
     "investment_potential": "Trung bình-cao - giá còn dư địa tăng, hạ tầng phía Tây tiếp tục phát triển",
     "data_collected_date": "2026-05-04",
     "calibration_factor": 0.643,
@@ -353,34 +342,31 @@
     "lat": 21.042,
     "lng": 105.753,
     "category": "trung_cap",
+    "price_status": "in_budget",
+    "price_range_billion_vnd": [4.7, 5.0],
+    "price_note": "Giá tham khảo batdongsan.com.vn T5/2026 — căn 62m² basic 4.7 tỉ, full nội thất cao cấp 5.9-7.0 tỉ. Cần xem căn nào nội thất phù hợp.",
+    "price_source": "https://batdongsan.com.vn/ban-can-ho-chung-cu-iris-garden",
+    "price_data_date": "2026-05-05",
     "sample_units": [
       {
-        "tower": "T1",
+        "tower": "T1 / T2",
         "area_m2": 62,
         "bedrooms": 2,
-        "price_billion_vnd": 4.0,
-        "status": "đã bàn giao",
-        "source_url": "https://batdongsan.com.vn/ban-can-ho-chung-cu-iris-garden"
-      },
-      {
-        "tower": "T2",
-        "area_m2": 62,
-        "bedrooms": 2,
-        "price_billion_vnd": 4.7,
-        "status": "đã bàn giao",
-        "source_url": "https://homedy.com/ban-can-ho-iris-garden"
+        "price_billion_vnd": 4.85,
+        "status": "đã bàn giao - chuyển nhượng"
       }
     ],
     "pros": [
       "Trục Trần Hữu Dực kết nối Phạm Văn Đồng + Lê Đức Thọ",
       "Tiện ích nội khu đầy đủ (bể bơi 4 mùa, gym)",
-      "Giá tốt 4-4.7 tỉ"
+      "Căn basic vừa khít budget"
     ],
     "cons": [
       "Nội khu hơi nhỏ",
-      "Đường Trần Hữu Dực giờ cao điểm tắc"
+      "Đường Trần Hữu Dực giờ cao điểm tắc",
+      "Căn full nội thất vượt budget rõ"
     ],
-    "estimated_commute_min": 23,
+    "estimated_commute_min": 18,
     "investment_potential": "Trung bình - khu vực ổn định, sức cầu thuê tốt từ dân làm Mỹ Đình",
     "data_collected_date": "2026-05-04",
     "calibration_factor": 0.723,

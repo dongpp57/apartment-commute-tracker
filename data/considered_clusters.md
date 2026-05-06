@@ -2,30 +2,39 @@
 
 Tất cả các cụm chung cư em đã research khi shortlist 10 cụm cho pipeline. File này tránh việc research lại từ đầu nếu sau này Anh muốn xem xét lại.
 
-**Tiêu chí filter ban đầu (2026-05-04):**
-- Budget: 2PN ≤ 5.2 tỉ VND (giá trần ~5 tỉ)
+> ⚠️ **Disclaimer về giá:** Giá ghi trong file này là **tham khảo** từ web search batdongsan.com.vn (T5/2026), **không phải giá Anh sẽ trả thực tế**. Anh sẽ thương lượng + verify khi đi xem nhà mẫu. Em research lúc đầu (2026-05-04) bị mix nguồn giá CĐT cũ → nhiều cụm em ghi giá rẻ hơn thực tế. Lần update này (2026-05-05) đã correct.
+
+**Tiêu chí filter (2026-05-04):**
+- Budget: 2PN ≤ 5 tỉ VND (giá trần)
 - Loại căn hộ: 2 phòng ngủ (vợ chồng son)
 - Vị trí: bất kỳ hướng nào quanh Hà Nội, ≤ 30 phút đi xe máy giờ cao điểm tới Vincom Nguyễn Chí Thanh
 - Tiêu chí: cân bằng (i) thời gian đi làm, (ii) tiềm năng tăng giá, (iii) chất lượng sống
 
 ---
 
-## ✅ 10 cụm trong shortlist
+## ✅ 6 cụm IN BUDGET (≤ 5 tỉ — candidate thực sự)
 
 Xem chi tiết tại [`apartments.json`](./apartments.json) và [dashboard live](https://dongpp57.github.io/apartment-commute-tracker/).
 
-| Cụm | District | Giá 2PN | Commute (motorbike peak) |
+| Cụm | District | Giá tham khảo T5/2026 | Commute (calibrated) |
 |---|---|---|---|
-| HD Mon City | Nam Từ Liêm | 4.8-5.0 tỉ | 14p |
-| Mỹ Đình Pearl | Nam Từ Liêm | 3.4-4.0 tỉ | 12p |
-| Vinhomes Smart City | Nam Từ Liêm | 4.8 tỉ | 18p |
-| Iris Garden | Nam Từ Liêm | 4.0-4.7 tỉ | 18p |
-| **Hoàng Thành Pearl** ✨ | Nam Từ Liêm | 5.0-5.6 tỉ | ~18p (chưa calibrate) |
-| Hateco Apollo | Nam Từ Liêm | 3.9-4.5 tỉ | 22p |
-| Sunshine Riverside | Tây Hồ | 5.0 tỉ | 15p |
-| Mipec Riverside | Long Biên | 4.5 tỉ | 21p |
-| Hồ Gươm Plaza | Hà Đông | 4.3-5.0 tỉ | 17p |
-| Eco Green City | Thanh Trì | 4.9-5.0 tỉ | 13p |
+| Hồ Gươm Plaza | Hà Đông | **3.98-4.5 tỉ** (65m²) | 17p |
+| Vinhomes Smart City | Nam Từ Liêm | **4.1-4.3 tỉ** (55m²) | 28p |
+| Hateco Apollo | Nam Từ Liêm | **4.3-5.0 tỉ** (60-65m²) | 22p |
+| HD Mon City | Nam Từ Liêm | **4.6-5.0 tỉ** (67m²) | 14p |
+| Iris Garden | Nam Từ Liêm | **4.7-5.0 tỉ** (62m² basic) | 18p |
+| Eco Green City | Thanh Trì | **4.9-5.0 tỉ** (67m² basic) | 13p |
+
+## 🔍 4 cụm OVER BUDGET (giữ làm tham khảo, track commute)
+
+Các cụm vượt 5 tỉ nhưng vẫn track commute để Anh có thông tin đầy đủ. Nếu Anh nâng budget hoặc thương lượng thành công 15-20%, có thể cân nhắc.
+
+| Cụm | District | Giá tham khảo T5/2026 | Commute (calibrated) | Note |
+|---|---|---|---|---|
+| Sunshine Riverside | Tây Hồ | **4.9-6.7 tỉ** (R3 64m²) | 15p | Quỹ căn ≤5 tỉ rất hạn chế |
+| Hoàng Thành Pearl | Nam Từ Liêm | **4.8-6.4 tỉ** (79-80m²) | 18p | Cạnh ga Cầu Diễn (Metro số 5) |
+| Mỹ Đình Pearl | Nam Từ Liêm | **5.9-6.6 tỉ** (73m²) | 12p | Commute ngắn nhất nhưng giá vượt 1 tỉ |
+| Mipec Riverside | Long Biên | **6.5-8.0 tỉ** (69-82m²) | 21p | Vượt budget 1.5-3 tỉ |
 
 ---
 
