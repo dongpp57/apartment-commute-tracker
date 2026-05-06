@@ -19,7 +19,7 @@
 </head>
 <body>
 <h1>Commute Tracker — Vincom Nguyễn Chí Thanh</h1>
-<p class="meta">Updated: 2026-05-06T02:27 · Mode: <strong>car driving with real-time traffic</strong> (Mapbox driving-traffic). Actual motorbike time is typically 10-30% shorter outside peak.</p>
+<p class="meta">Updated: 2026-05-06T04:12 · Mode: <strong>car driving with real-time traffic</strong> (Mapbox driving-traffic). Actual motorbike time is typically 10-30% shorter outside peak.</p>
 
 
 <h2>Slot 07:00</h2>
@@ -222,6 +222,176 @@ new Chart(document.getElementById('chart-0700'), {
     <th>Mean</th><th>p50</th><th>p90</th><th>Std</th><th>Samples</th><th>Flags</th>
   </tr>
   
+    
+    
+  <tr>
+    <td>1</td>
+    <td>HD Mon City (Hải Đăng City)</td>
+    <td>Nam Từ Liêm</td>
+    <td class="num">20.2</td>
+    <td class="num">20.2</td>
+    <td class="num">20.2</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>2</td>
+    <td>Sunshine Riverside (Phú Thượng)</td>
+    <td>Tây Hồ</td>
+    <td class="num">23.5</td>
+    <td class="num">23.5</td>
+    <td class="num">23.5</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>3</td>
+    <td>Iris Garden Mỹ Đình</td>
+    <td>Nam Từ Liêm</td>
+    <td class="num">25.0</td>
+    <td class="num">25.0</td>
+    <td class="num">25.0</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>4</td>
+    <td>Mỹ Đình Pearl</td>
+    <td>Nam Từ Liêm</td>
+    <td class="num">26.0</td>
+    <td class="num">26.0</td>
+    <td class="num">26.0</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>5</td>
+    <td>Vinhomes Smart City</td>
+    <td>Nam Từ Liêm</td>
+    <td class="num">26.4</td>
+    <td class="num">26.4</td>
+    <td class="num">26.4</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>6</td>
+    <td>Hồ Gươm Plaza</td>
+    <td>Hà Đông</td>
+    <td class="num">26.6</td>
+    <td class="num">26.6</td>
+    <td class="num">26.6</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>7</td>
+    <td>Eco Green City</td>
+    <td>Thanh Trì</td>
+    <td class="num">28.2</td>
+    <td class="num">28.2</td>
+    <td class="num">28.2</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>8</td>
+    <td>Hoàng Thành Pearl</td>
+    <td>Nam Từ Liêm</td>
+    <td class="num">29.6</td>
+    <td class="num">29.6</td>
+    <td class="num">29.6</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>9</td>
+    <td>Hateco Apollo Xuân Phương</td>
+    <td>Nam Từ Liêm</td>
+    <td class="num">36.3</td>
+    <td class="num">36.3</td>
+    <td class="num">36.3</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      <span class="flag-warn">&#9888;&#65039; p90&gt;30</span>
+      
+    </td>
+  </tr>
+  
+    
+    
+  <tr>
+    <td>10</td>
+    <td>Mipec Riverside Long Biên</td>
+    <td>Long Biên</td>
+    <td class="num">42.4</td>
+    <td class="num">42.4</td>
+    <td class="num">42.4</td>
+    <td class="num">0.0</td>
+    <td class="num">1</td>
+    <td>
+      <span class="flag-warn">&#9888;&#65039; p90&gt;30</span>
+      
+    </td>
+  </tr>
+  
 </table>
 
 <canvas id="chart-0730" height="120"></canvas>
@@ -229,10 +399,10 @@ new Chart(document.getElementById('chart-0700'), {
 new Chart(document.getElementById('chart-0730'), {
   type: 'bar',
   data: {
-    labels: [],
+    labels: ["hd-mon-city", "sunshine-riverside", "iris-garden", "my-dinh-pearl", "vinhomes-smart-city", "ho-guom-plaza", "eco-green-city", "hoang-thanh-pearl", "hateco-apollo", "mipec-riverside"],
     datasets: [{
       label: 'Mean driving-traffic commute (min) — slot 0730',
-      data: [],
+      data: [20.18, 23.52, 25.0, 25.96, 26.44, 26.58, 28.18, 29.62, 36.3, 42.35],
     }]
   }
 });
