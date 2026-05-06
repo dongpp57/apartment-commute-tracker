@@ -56,7 +56,9 @@ def compute_report_data(*, log_path, apartments_path):
 
 def print_cli_report(data):
     print(f"COMMUTE TIME REPORT — Destination: {config.DESTINATION_NAME}")
-    print(f"Mode: motorcycle (driving x {config.MOTO_FACTOR})")
+    print("Mode: car driving with real-time traffic (Mapbox driving-traffic)")
+    print("Note: actual motorbike time is typically 10-30% shorter outside peak,")
+    print("      similar to car during peak hours.")
     print()
 
     for slot in config.SLOTS:

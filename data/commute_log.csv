@@ -1,11 +1,1 @@
 timestamp_ict,apartment_id,slot,direction,duration_min,duration_in_traffic_min,duration_motorcycle_min,distance_km,status
-2026-05-06T08:58:01+07:00,vinhomes-smart-city,0700,home_to_work,29.07,29.07,20.67,9.83,OK
-2026-05-06T08:58:01+07:00,hd-mon-city,0700,home_to_work,23.37,23.37,13.62,4.91,OK
-2026-05-06T08:58:01+07:00,my-dinh-pearl,0700,home_to_work,30.23,30.23,14.21,7.61,OK
-2026-05-06T08:58:01+07:00,hoang-thanh-pearl,0700,home_to_work,33.96,33.96,21.91,8.76,OK
-2026-05-06T08:58:01+07:00,mipec-riverside,0700,home_to_work,48.27,48.27,24.52,9.59,OK
-2026-05-06T08:58:01+07:00,sunshine-riverside,0700,home_to_work,24.65,24.65,15.73,7.88,OK
-2026-05-06T08:58:01+07:00,ho-guom-plaza,0700,home_to_work,30.68,30.68,21.38,7.65,OK
-2026-05-06T08:58:01+07:00,eco-green-city,0700,home_to_work,34.6,34.6,17.71,7.58,OK
-2026-05-06T08:58:01+07:00,hateco-apollo,0700,home_to_work,41.34,41.34,26.58,13.35,OK
-2026-05-06T08:58:01+07:00,iris-garden,0700,home_to_work,29.0,29.0,20.96,6.94,OK

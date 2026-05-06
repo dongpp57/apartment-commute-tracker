@@ -19,7 +19,7 @@
 </head>
 <body>
 <h1>Commute Tracker — Vincom Nguyễn Chí Thanh</h1>
-<p class="meta">Updated: 2026-05-06T01:58 · Mode: motorcycle (driving × 0.645)</p>
+<p class="meta">Updated: 2026-05-06T09:08 · Mode: <strong>car driving with real-time traffic</strong> (Mapbox driving-traffic). Actual motorbike time is typically 10-30% shorter outside peak.</p>
 
 
 <h2>Slot 07:00</h2>
@@ -29,176 +29,6 @@
     <th>Mean</th><th>p50</th><th>p90</th><th>Std</th><th>Samples</th><th>Flags</th>
   </tr>
   
-    
-    
-  <tr>
-    <td>1</td>
-    <td>HD Mon City (Hải Đăng City)</td>
-    <td>Nam Từ Liêm</td>
-    <td class="num">13.6</td>
-    <td class="num">13.6</td>
-    <td class="num">13.6</td>
-    <td class="num">0.0</td>
-    <td class="num">1</td>
-    <td>
-      
-      
-    </td>
-  </tr>
-  
-    
-    
-  <tr>
-    <td>2</td>
-    <td>Mỹ Đình Pearl</td>
-    <td>Nam Từ Liêm</td>
-    <td class="num">14.2</td>
-    <td class="num">14.2</td>
-    <td class="num">14.2</td>
-    <td class="num">0.0</td>
-    <td class="num">1</td>
-    <td>
-      
-      
-    </td>
-  </tr>
-  
-    
-    
-  <tr>
-    <td>3</td>
-    <td>Sunshine Riverside (Phú Thượng)</td>
-    <td>Tây Hồ</td>
-    <td class="num">15.7</td>
-    <td class="num">15.7</td>
-    <td class="num">15.7</td>
-    <td class="num">0.0</td>
-    <td class="num">1</td>
-    <td>
-      
-      
-    </td>
-  </tr>
-  
-    
-    
-  <tr>
-    <td>4</td>
-    <td>Eco Green City</td>
-    <td>Thanh Trì</td>
-    <td class="num">17.7</td>
-    <td class="num">17.7</td>
-    <td class="num">17.7</td>
-    <td class="num">0.0</td>
-    <td class="num">1</td>
-    <td>
-      
-      
-    </td>
-  </tr>
-  
-    
-    
-  <tr>
-    <td>5</td>
-    <td>Vinhomes Smart City</td>
-    <td>Nam Từ Liêm</td>
-    <td class="num">20.7</td>
-    <td class="num">20.7</td>
-    <td class="num">20.7</td>
-    <td class="num">0.0</td>
-    <td class="num">1</td>
-    <td>
-      
-      
-    </td>
-  </tr>
-  
-    
-    
-  <tr>
-    <td>6</td>
-    <td>Iris Garden Mỹ Đình</td>
-    <td>Nam Từ Liêm</td>
-    <td class="num">21.0</td>
-    <td class="num">21.0</td>
-    <td class="num">21.0</td>
-    <td class="num">0.0</td>
-    <td class="num">1</td>
-    <td>
-      
-      
-    </td>
-  </tr>
-  
-    
-    
-  <tr>
-    <td>7</td>
-    <td>Hồ Gươm Plaza</td>
-    <td>Hà Đông</td>
-    <td class="num">21.4</td>
-    <td class="num">21.4</td>
-    <td class="num">21.4</td>
-    <td class="num">0.0</td>
-    <td class="num">1</td>
-    <td>
-      
-      
-    </td>
-  </tr>
-  
-    
-    
-  <tr>
-    <td>8</td>
-    <td>Hoàng Thành Pearl</td>
-    <td>Nam Từ Liêm</td>
-    <td class="num">21.9</td>
-    <td class="num">21.9</td>
-    <td class="num">21.9</td>
-    <td class="num">0.0</td>
-    <td class="num">1</td>
-    <td>
-      
-      
-    </td>
-  </tr>
-  
-    
-    
-  <tr>
-    <td>9</td>
-    <td>Mipec Riverside Long Biên</td>
-    <td>Long Biên</td>
-    <td class="num">24.5</td>
-    <td class="num">24.5</td>
-    <td class="num">24.5</td>
-    <td class="num">0.0</td>
-    <td class="num">1</td>
-    <td>
-      
-      
-    </td>
-  </tr>
-  
-    
-    
-  <tr>
-    <td>10</td>
-    <td>Hateco Apollo Xuân Phương</td>
-    <td>Nam Từ Liêm</td>
-    <td class="num">26.6</td>
-    <td class="num">26.6</td>
-    <td class="num">26.6</td>
-    <td class="num">0.0</td>
-    <td class="num">1</td>
-    <td>
-      
-      
-    </td>
-  </tr>
-  
 </table>
 
 <canvas id="chart-0700" height="120"></canvas>
@@ -206,10 +36,10 @@
 new Chart(document.getElementById('chart-0700'), {
   type: 'bar',
   data: {
-    labels: ["hd-mon-city", "my-dinh-pearl", "sunshine-riverside", "eco-green-city", "vinhomes-smart-city", "iris-garden", "ho-guom-plaza", "hoang-thanh-pearl", "mipec-riverside", "hateco-apollo"],
+    labels: [],
     datasets: [{
-      label: 'Mean motorbike commute (min) — slot 0700',
-      data: [13.62, 14.21, 15.73, 17.71, 20.67, 20.96, 21.38, 21.91, 24.52, 26.58],
+      label: 'Mean driving-traffic commute (min) — slot 0700',
+      data: [],
     }]
   }
 });
@@ -231,7 +61,7 @@ new Chart(document.getElementById('chart-0730'), {
   data: {
     labels: [],
     datasets: [{
-      label: 'Mean motorbike commute (min) — slot 0730',
+      label: 'Mean driving-traffic commute (min) — slot 0730',
       data: [],
     }]
   }
@@ -254,7 +84,7 @@ new Chart(document.getElementById('chart-1730'), {
   data: {
     labels: [],
     datasets: [{
-      label: 'Mean motorbike commute (min) — slot 1730',
+      label: 'Mean driving-traffic commute (min) — slot 1730',
       data: [],
     }]
   }
@@ -277,7 +107,7 @@ new Chart(document.getElementById('chart-1800'), {
   data: {
     labels: [],
     datasets: [{
-      label: 'Mean motorbike commute (min) — slot 1800',
+      label: 'Mean driving-traffic commute (min) — slot 1800',
       data: [],
     }]
   }

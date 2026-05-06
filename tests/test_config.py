@@ -7,9 +7,9 @@ def test_destination_coords_are_hanoi():
 
 
 def test_moto_factor_default():
-    # Calibrated against Google Maps; Hanoi motorbikes claw back significantly
-    # vs cars in traffic. Range allows future re-calibration without breaking tests.
-    assert 0.50 <= config.MOTO_FACTOR <= 0.95
+    # MOTO_FACTOR = 1.0 means raw Mapbox driving-traffic logged as-is
+    # (no motorbike correction). Range allows 0.5-1.0 for flexibility.
+    assert 0.50 <= config.MOTO_FACTOR <= 1.0
 
 
 def test_slots_defined():

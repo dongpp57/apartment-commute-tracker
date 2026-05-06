@@ -8,7 +8,10 @@
     "lng": 105.7423,
     "category": "cao_cap",
     "price_status": "in_budget",
-    "price_range_billion_vnd": [4.1, 4.3],
+    "price_range_billion_vnd": [
+      4.1,
+      4.3
+    ],
     "price_note": "Giá tham khảo batdongsan.com.vn T5/2026 — căn 2PN 55m² (Sapphire 1, Sola Park). Có thể thương lượng giảm 5-15% khi đi xem thực tế.",
     "price_source": "https://batdongsan.com.vn/ban-can-ho-chung-cu-vinhomes-smart-city",
     "price_data_date": "2026-05-05",
@@ -33,9 +36,7 @@
     ],
     "estimated_commute_min": 28,
     "investment_potential": "Cao - thương hiệu Vinhomes, Metro số 5 tương lai, sức cầu thuê + bán ổn định",
-    "data_collected_date": "2026-05-04",
-    "calibration_factor": 0.711,
-    "calibration_source": "google_maps_motorbike_2026-05-05"
+    "data_collected_date": "2026-05-04"
   },
   {
     "id": "hd-mon-city",
@@ -46,7 +47,10 @@
     "lng": 105.772,
     "category": "cao_cap",
     "price_status": "in_budget",
-    "price_range_billion_vnd": [4.6, 5.0],
+    "price_range_billion_vnd": [
+      4.6,
+      5.0
+    ],
     "price_note": "Giá tham khảo batdongsan.com.vn T5/2026 — căn 67m² basic 4.6 tỉ, full nội thất 5-6.5 tỉ. Có thể thương lượng giảm 5-15%.",
     "price_source": "https://batdongsan.com.vn/ban-can-ho-chung-cu-mon-city",
     "price_data_date": "2026-05-05",
@@ -70,9 +74,7 @@
     ],
     "estimated_commute_min": 14,
     "investment_potential": "Trung bình - khu vực Mỹ Đình 2 đã định giá, ít sóng nhưng thanh khoản tốt",
-    "data_collected_date": "2026-05-04",
-    "calibration_factor": 0.583,
-    "calibration_source": "google_maps_motorbike_2026-05-05"
+    "data_collected_date": "2026-05-04"
   },
   {
     "id": "my-dinh-pearl",
@@ -83,7 +85,10 @@
     "lng": 105.7625,
     "category": "trung_cap",
     "price_status": "over_budget_reference",
-    "price_range_billion_vnd": [5.9, 6.6],
+    "price_range_billion_vnd": [
+      5.9,
+      6.6
+    ],
     "price_note": "⚠️ VƯỢT BUDGET 5 TỈ - giá tham khảo batdongsan.com.vn T5/2026 căn 73m² 5.9-6.6 tỉ. Em research lúc đầu sai (3.4-4 tỉ là giá CĐT mở bán cũ 2020). Giữ lại để track commute, không phải candidate trong budget.",
     "price_source": "https://batdongsan.com.vn/ban-can-ho-chung-cu-my-dinh-pearl",
     "price_data_date": "2026-05-05",
@@ -107,9 +112,7 @@
     ],
     "estimated_commute_min": 12,
     "investment_potential": "Cao - vị trí gần sân vận động Mỹ Đình, hạ tầng tốt",
-    "data_collected_date": "2026-05-04",
-    "calibration_factor": 0.47,
-    "calibration_source": "google_maps_motorbike_2026-05-05"
+    "data_collected_date": "2026-05-04"
   },
   {
     "id": "hoang-thanh-pearl",
@@ -120,7 +123,10 @@
     "lng": 105.7445,
     "category": "cao_cap",
     "price_status": "over_budget_reference",
-    "price_range_billion_vnd": [4.8, 6.4],
+    "price_range_billion_vnd": [
+      4.8,
+      6.4
+    ],
     "price_note": "⚠️ BORDERLINE - giá tham khảo batdongsan.com.vn T5/2026 căn 79-80m² 4.8-6.4 tỉ tùy nội thất. Căn basic ~4.8 tỉ trong budget, căn full nội thất 6.4 tỉ vượt. Cần verify khi đi xem.",
     "price_source": "https://batdongsan.com.vn/ban-can-ho-chung-cu-hoang-thanh-pearl/2pn",
     "price_data_date": "2026-05-05",
@@ -146,7 +152,7 @@
     "estimated_commute_min": 18,
     "investment_potential": "Trung bình-cao - hạ tầng Cầu Diễn tăng tốc với Metro số 5 (Văn Cao - Hòa Lạc), gần ga là điểm cộng dài hạn",
     "data_collected_date": "2026-05-05",
-    "note": "Anh đề xuất add - cạnh ga tàu, tiện đi làm. Calibration_factor chưa có (cần Anh đo Google Maps), tạm dùng default 0.645"
+    "note": "Anh đề xuất add - cạnh ga tàu, tiện đi làm."
   },
   {
     "id": "mipec-riverside",
@@ -157,7 +163,10 @@
     "lng": 105.861,
     "category": "cao_cap",
     "price_status": "over_budget_reference",
-    "price_range_billion_vnd": [6.5, 8.0],
+    "price_range_billion_vnd": [
+      6.5,
+      8.0
+    ],
     "price_note": "⚠️ VƯỢT BUDGET 5 TỈ - giá tham khảo batdongsan.com.vn T5/2026 căn 69-82m² 6.5-8 tỉ. Em research lúc đầu sai (4.5 tỉ). Giữ lại để track commute.",
     "price_source": "https://batdongsan.com.vn/ban-can-ho-chung-cu-mipec-riverside",
     "price_data_date": "2026-05-05",
@@ -181,9 +190,7 @@
     ],
     "estimated_commute_min": 21,
     "investment_potential": "Cao - vị trí cận trung tâm, view sông là lợi thế khan hiếm",
-    "data_collected_date": "2026-05-04",
-    "calibration_factor": 0.508,
-    "calibration_source": "google_maps_motorbike_2026-05-05"
+    "data_collected_date": "2026-05-04"
   },
   {
     "id": "sunshine-riverside",
@@ -194,7 +201,10 @@
     "lng": 105.8155,
     "category": "cao_cap",
     "price_status": "over_budget_reference",
-    "price_range_billion_vnd": [4.9, 6.7],
+    "price_range_billion_vnd": [
+      4.9,
+      6.7
+    ],
     "price_note": "⚠️ BORDERLINE/VƯỢT - giá tham khảo batdongsan.com.vn T5/2026 căn R3 64m² ~6.7 tỉ. Quỹ căn dưới 5 tỉ rất hạn chế (chủ yếu căn nhỏ R1/R2). Em research sai lúc đầu (5 tỉ).",
     "price_source": "https://batdongsan.com.vn/ban-can-ho-chung-cu-sunshine-riverside/2pn",
     "price_data_date": "2026-05-05",
@@ -218,9 +228,7 @@
     ],
     "estimated_commute_min": 15,
     "investment_potential": "Cao - đất Tây Hồ luôn neo giá cao, view sông là tài sản dài hạn",
-    "data_collected_date": "2026-05-04",
-    "calibration_factor": 0.638,
-    "calibration_source": "google_maps_motorbike_2026-05-05"
+    "data_collected_date": "2026-05-04"
   },
   {
     "id": "ho-guom-plaza",
@@ -231,7 +239,10 @@
     "lng": 105.7895,
     "category": "trung_cap",
     "price_status": "in_budget",
-    "price_range_billion_vnd": [3.98, 4.5],
+    "price_range_billion_vnd": [
+      3.98,
+      4.5
+    ],
     "price_note": "Giá tham khảo batdongsan.com.vn T5/2026 — căn 65m² ~3.98-4.3 tỉ (in budget), căn 76m² 6.25 tỉ (vượt). Anh nên tập trung căn 65m².",
     "price_source": "https://batdongsan.com.vn/ban-can-ho-chung-cu-ho-guom-plaza",
     "price_data_date": "2026-05-05",
@@ -255,9 +266,7 @@
     ],
     "estimated_commute_min": 17,
     "investment_potential": "Trung bình - giá đã định, tiềm năng tăng phụ thuộc Metro số 2A và quy hoạch Hà Đông",
-    "data_collected_date": "2026-05-04",
-    "calibration_factor": 0.697,
-    "calibration_source": "google_maps_motorbike_2026-05-05"
+    "data_collected_date": "2026-05-04"
   },
   {
     "id": "eco-green-city",
@@ -268,7 +277,10 @@
     "lng": 105.8108,
     "category": "trung_cap",
     "price_status": "in_budget",
-    "price_range_billion_vnd": [4.9, 5.0],
+    "price_range_billion_vnd": [
+      4.9,
+      5.0
+    ],
     "price_note": "Giá tham khảo batdongsan.com.vn T5/2026 — căn 67m² basic 4.9 tỉ vừa khít budget, căn full nội thất CT3 5.9-6.1 tỉ vượt. Cần đi xem để xác định nội thất phù hợp.",
     "price_source": "https://batdongsan.com.vn/ban-can-ho-chung-cu-eco-green-city",
     "price_data_date": "2026-05-05",
@@ -293,9 +305,7 @@
     ],
     "estimated_commute_min": 13,
     "investment_potential": "Trung bình - giá vào hợp lý, sức cầu thuê tốt từ dân Linh Đàm/Đại Kim",
-    "data_collected_date": "2026-05-04",
-    "calibration_factor": 0.512,
-    "calibration_source": "google_maps_motorbike_2026-05-05"
+    "data_collected_date": "2026-05-04"
   },
   {
     "id": "hateco-apollo",
@@ -306,7 +316,10 @@
     "lng": 105.728,
     "category": "trung_cap",
     "price_status": "in_budget",
-    "price_range_billion_vnd": [4.3, 5.0],
+    "price_range_billion_vnd": [
+      4.3,
+      5.0
+    ],
     "price_note": "Giá tham khảo batdongsan.com.vn T5/2026 — căn 60m² 4.3 tỉ (full nội thất), căn 65m² 4.8-5.25 tỉ. Cụm có nhiều căn vừa khít budget.",
     "price_source": "https://batdongsan.com.vn/ban-can-ho-chung-cu-hateco-apollo",
     "price_data_date": "2026-05-05",
@@ -330,9 +343,7 @@
     ],
     "estimated_commute_min": 22,
     "investment_potential": "Trung bình-cao - giá còn dư địa tăng, hạ tầng phía Tây tiếp tục phát triển",
-    "data_collected_date": "2026-05-04",
-    "calibration_factor": 0.643,
-    "calibration_source": "google_maps_motorbike_2026-05-05"
+    "data_collected_date": "2026-05-04"
   },
   {
     "id": "iris-garden",
@@ -343,7 +354,10 @@
     "lng": 105.753,
     "category": "trung_cap",
     "price_status": "in_budget",
-    "price_range_billion_vnd": [4.7, 5.0],
+    "price_range_billion_vnd": [
+      4.7,
+      5.0
+    ],
     "price_note": "Giá tham khảo batdongsan.com.vn T5/2026 — căn 62m² basic 4.7 tỉ, full nội thất cao cấp 5.9-7.0 tỉ. Cần xem căn nào nội thất phù hợp.",
     "price_source": "https://batdongsan.com.vn/ban-can-ho-chung-cu-iris-garden",
     "price_data_date": "2026-05-05",
@@ -368,8 +382,6 @@
     ],
     "estimated_commute_min": 18,
     "investment_potential": "Trung bình - khu vực ổn định, sức cầu thuê tốt từ dân làm Mỹ Đình",
-    "data_collected_date": "2026-05-04",
-    "calibration_factor": 0.723,
-    "calibration_source": "google_maps_motorbike_2026-05-05"
+    "data_collected_date": "2026-05-04"
   }
 ]

@@ -19,7 +19,7 @@
 </head>
 <body>
 <h1>Commute Tracker — {{ destination_name }}</h1>
-<p class="meta">Updated: {{ updated_at }} · Mode: motorcycle (driving × {{ moto_factor }})</p>
+<p class="meta">Updated: {{ updated_at }} · Mode: <strong>car driving with real-time traffic</strong> (Mapbox driving-traffic). Actual motorbike time is typically 10-30% shorter outside peak.</p>
 
 {% for slot in slots %}
 <h2>Slot {{ slot[:2] }}:{{ slot[2:] }}</h2>
@@ -55,7 +55,7 @@ new Chart(document.getElementById('chart-{{ slot }}'), {
   data: {
     labels: {{ rankings[slot] | map(attribute='apartment_id') | list | tojson }},
     datasets: [{
-      label: 'Mean motorbike commute (min) — slot {{ slot }}',
+      label: 'Mean driving-traffic commute (min) — slot {{ slot }}',
       data: {{ rankings[slot] | map(attribute='mean') | list | tojson }},
     }]
   }
