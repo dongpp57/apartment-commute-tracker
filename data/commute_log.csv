@@ -1209,3 +1209,13 @@ timestamp_ict,apartment_id,slot,direction,duration_min,duration_in_traffic_min,d
 2026-06-05T09:55:04+07:00,eco-green-city,0700,home_to_work,25.66,25.66,25.66,7.94,OK
 2026-06-05T09:55:04+07:00,hateco-apollo,0700,home_to_work,32.61,32.61,32.61,10.06,OK
 2026-06-05T09:55:04+07:00,iris-garden,0700,home_to_work,24.64,24.64,24.64,7.13,OK
+2026-06-05T11:55:54+07:00,vinhomes-smart-city,0730,home_to_work,21.69,21.69,21.69,10.23,OK
+2026-06-05T11:55:54+07:00,hd-mon-city,0730,home_to_work,16.27,16.27,16.27,4.91,OK
+2026-06-05T11:55:54+07:00,my-dinh-pearl,0730,home_to_work,21.28,21.28,21.28,9.41,OK
+2026-06-05T11:55:54+07:00,hoang-thanh-pearl,0730,home_to_work,28.6,28.6,28.6,10.68,OK
+2026-06-05T11:55:54+07:00,mipec-riverside,0730,home_to_work,31.17,31.17,31.17,9.55,OK
+2026-06-05T11:55:54+07:00,sunshine-riverside,0730,home_to_work,18.05,18.05,18.05,7.89,OK
+2026-06-05T11:55:54+07:00,ho-guom-plaza,0730,home_to_work,20.71,20.71,20.71,7.63,OK
+2026-06-05T11:55:54+07:00,eco-green-city,0730,home_to_work,23.3,23.3,23.3,7.9,OK
+2026-06-05T11:55:54+07:00,hateco-apollo,0730,home_to_work,29.15,29.15,29.15,13.71,OK
+2026-06-05T11:55:54+07:00,iris-garden,0730,home_to_work,22.54,22.54,22.54,7.13,OK
